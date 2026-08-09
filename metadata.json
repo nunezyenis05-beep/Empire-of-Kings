@@ -1,0 +1,6 @@
+{
+  "name": "EMPIRE OF KINGS",
+  "description": "Aetherfall: Empire of Kings - Multiplayer Battle Royale & Social Game",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
