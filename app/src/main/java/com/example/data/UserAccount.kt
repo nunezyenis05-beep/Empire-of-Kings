@@ -17,5 +17,16 @@ data class UserAccount(
     val clanName: String = "IMPERIO DORADO",
     val totalWins: Int = 128,
     val totalKills: Int = 1450,
-    val isVip: Boolean = true
+    val isVip: Boolean = true,
+
+    // Kingdom Expansion Fields
+    val castleLevel: Int = 1,
+    val goldMineLevel: Int = 1,
+    val barracksLevel: Int = 1,
+    val woodCount: Long = 1000L,
+    val soldiersCount: Int = 5,
+    val archersCount: Int = 2,
+    val magesCount: Int = 0,
+    val kingdomLevel: Int = 1,
+    val kingdomExp: Int = 0
 )

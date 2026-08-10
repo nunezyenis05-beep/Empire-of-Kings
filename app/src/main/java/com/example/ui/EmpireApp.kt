@@ -73,10 +73,14 @@ fun EmpireApp(
             )
         }
 
-        is ScreenRoute.Disco -> {
-            DiscoScreen(
+        is ScreenRoute.Kingdom -> {
+            KingdomScreen(
                 userAccount = userAccount,
-                onNavigate = { route -> viewModel.navigateTo(route) }
+                onNavigate = { route -> viewModel.navigateTo(route) },
+                onCollectResources = { viewModel.collectResources() },
+                onUpgradeBuilding = { b, cb -> viewModel.upgradeBuilding(b, cb) },
+                onTrainTroop = { t, cb -> viewModel.trainTroop(t, cb) },
+                onSimulateBattle = { s, a, m, d, cb -> viewModel.simulateBattle(s, a, m, d, cb) }
             )
         }
 
