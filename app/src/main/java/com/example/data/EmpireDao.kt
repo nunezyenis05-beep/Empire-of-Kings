@@ -40,4 +40,10 @@ interface EmpireDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertChatMessage(msg: ChatMessage)
+
+    @Query("SELECT * FROM kingdom_state WHERE id = 'local_kingdom'")
+    fun getKingdomState(): Flow<KingdomStateEntity?>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun saveKingdomState(state: KingdomStateEntity)
 }

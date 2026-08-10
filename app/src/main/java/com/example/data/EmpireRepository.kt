@@ -10,6 +10,7 @@ class EmpireRepository(private val dao: EmpireDao) {
     val weapons: Flow<List<WeaponItem>> = dao.getAllWeapons()
     val inventory: Flow<List<InventoryItem>> = dao.getInventory()
     val friends: Flow<List<FriendUser>> = dao.getFriends()
+    val kingdomState: Flow<KingdomStateEntity?> = dao.getKingdomState()
 
     fun getChatMessages(channel: String): Flow<List<ChatMessage>> = dao.getChatMessages(channel)
 
@@ -208,5 +209,9 @@ class EmpireRepository(private val dao: EmpireDao) {
 
     suspend fun sendChatMessage(sender: String, message: String, channel: String) {
         dao.insertChatMessage(ChatMessage(senderName = sender, message = message, channel = channel))
+    }
+
+    suspend fun saveKingdomState(state: KingdomGameState) = withContext(Dispatchers.IO) {
+        dao.saveKingdomState(KingdomStateEntity.fromGameState(state))
     }
 }

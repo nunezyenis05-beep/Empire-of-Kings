@@ -18,6 +18,7 @@ fun EmpireApp(
     val chatMessages by viewModel.chatMessages.collectAsStateWithLifecycle()
     val squadSlots by viewModel.squadSlots.collectAsStateWithLifecycle()
     val activeActionText by viewModel.activeActionText.collectAsStateWithLifecycle()
+    val kingdomState by viewModel.kingdomState.collectAsStateWithLifecycle()
 
     val showPaymentModal by viewModel.showPaymentModal.collectAsStateWithLifecycle()
     val paymentItemName by viewModel.paymentItemName.collectAsStateWithLifecycle()
@@ -113,6 +114,16 @@ fun EmpireApp(
         is ScreenRoute.Battle -> {
             BattleRoyaleScreen(
                 onNavigate = { route -> viewModel.navigateTo(route) }
+            )
+        }
+
+        is ScreenRoute.Kingdom -> {
+            KingdomScreen(
+                userAccount = userAccount,
+                kingdomState = kingdomState,
+                onNavigate = { route -> viewModel.navigateTo(route) },
+                onSaveKingdom = { state -> viewModel.saveKingdom(state) },
+                onResetKingdom = { viewModel.resetKingdom() }
             )
         }
     }
