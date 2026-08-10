@@ -36,6 +36,7 @@ fun BottomNavBar(
 ) {
     val tabs = listOf(
         NavTabItem(ScreenRoute.Lobby, "LOBBY", Icons.Default.Castle),
+        NavTabItem(ScreenRoute.Kingdom, "REINO", Icons.Default.Map),
         NavTabItem(ScreenRoute.Shop, "TIENDA", Icons.Default.ShoppingBag),
         NavTabItem(ScreenRoute.Wardrobe, "ARMARIO", Icons.Default.Shield),
         NavTabItem(ScreenRoute.Disco, "DISCOTECA", Icons.Default.MusicNote),

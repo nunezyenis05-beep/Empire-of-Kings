@@ -19,6 +19,7 @@ sealed class ScreenRoute {
     object Profile : ScreenRoute()
     object SettingsAdmin : ScreenRoute()
     object Battle : ScreenRoute()
+    object Kingdom : ScreenRoute()
 }
 
 class EmpireViewModel(application: Application) : AndroidViewModel(application) {
@@ -61,6 +62,23 @@ class EmpireViewModel(application: Application) : AndroidViewModel(application) 
     // Active dance/emote action state
     private val _activeActionText = MutableStateFlow<String?>(null)
     val activeActionText: StateFlow<String?> = _activeActionText.asStateFlow()
+
+    // Kingdom Map State Flow
+    val kingdomState: StateFlow<KingdomGameState> = repository.kingdomState
+        .map { entity -> KingdomStateEntity.toGameState(entity) }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), KingdomStateEntity.createDefaultState())
+
+    fun saveKingdom(state: KingdomGameState) {
+        viewModelScope.launch {
+            repository.saveKingdomState(state)
+        }
+    }
+
+    fun resetKingdom() {
+        viewModelScope.launch {
+            repository.saveKingdomState(KingdomStateEntity.createDefaultState())
+        }
+    }
 
     // Payment modal state
     private val _showPaymentModal = MutableStateFlow(false)

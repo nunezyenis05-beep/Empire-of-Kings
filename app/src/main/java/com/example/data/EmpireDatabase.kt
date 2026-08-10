@@ -11,7 +11,8 @@ import androidx.room.RoomDatabase
         WeaponItem::class,
         InventoryItem::class,
         FriendUser::class,
-        ChatMessage::class
+        ChatMessage::class,
+        KingdomStateEntity::class
     ],
     version = 1,
     exportSchema = false
