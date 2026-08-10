@@ -13,7 +13,7 @@ sealed class ScreenRoute {
     object Lobby : ScreenRoute()
     object Shop : ScreenRoute()
     object Wardrobe : ScreenRoute()
-    object Disco : ScreenRoute()
+    object Kingdom : ScreenRoute() // Replaces Disco
     object Games : ScreenRoute()
     object Inventory : ScreenRoute()
     object Profile : ScreenRoute()
@@ -170,6 +170,45 @@ class EmpireViewModel(application: Application) : AndroidViewModel(application) 
                 coronasDiamonds = user.coronasDiamonds + diamonds
             )
             repository.saveUser(updated)
+        }
+    }
+
+    // --- KINGDOM EXTRA VIEWMODEL MECHANICS ---
+
+    fun collectResources() {
+        val user = userAccount.value ?: return
+        viewModelScope.launch {
+            repository.collectResources(user)
+        }
+    }
+
+    fun upgradeBuilding(buildingType: String, onResult: (Boolean, String) -> Unit) {
+        val user = userAccount.value ?: return
+        viewModelScope.launch {
+            val result = repository.upgradeBuilding(buildingType, user)
+            onResult(result.success, result.message)
+        }
+    }
+
+    fun trainTroop(troopType: String, onResult: (Boolean, String) -> Unit) {
+        val user = userAccount.value ?: return
+        viewModelScope.launch {
+            val result = repository.trainTroop(troopType, user)
+            onResult(result.success, result.message)
+        }
+    }
+
+    fun simulateBattle(
+        deployedSoldiers: Int,
+        deployedArchers: Int,
+        deployedMages: Int,
+        difficulty: String,
+        onResult: (KingdomBattleResult) -> Unit
+    ) {
+        val user = userAccount.value ?: return
+        viewModelScope.launch {
+            val result = repository.simulateBattle(deployedSoldiers, deployedArchers, deployedMages, difficulty, user)
+            onResult(result)
         }
     }
 }
