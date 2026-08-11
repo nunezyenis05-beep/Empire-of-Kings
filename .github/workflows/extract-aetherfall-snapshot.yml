@@ -1,0 +1,49 @@
+name: Extract Aetherfall project snapshot into repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    name: Preserve current work and add full project folder
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out current repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download and extract complete project snapshot
+        env:
+          SNAPSHOT_URL: https://share.zapia.com/credy2pujmpqoikrxeij8l
+          TARGET: aetherfall_project_2026_08_11
+        run: |
+          test ! -e "$TARGET"
+          curl --fail --location --retry 3 "$SNAPSHOT_URL" -o /tmp/aetherfall-project.zip
+          mkdir -p /tmp/aetherfall-extracted "$TARGET"
+          unzip -q /tmp/aetherfall-project.zip -d /tmp/aetherfall-extracted
+          test -d /tmp/aetherfall-extracted/Empire-of-Kings
+          cp -a /tmp/aetherfall-extracted/Empire-of-Kings/. "$TARGET/"
+          printf '%s\n' \
+            'Aetherfall: Empire of Kings — complete project snapshot' \
+            'Snapshot date: 2026-08-11' \
+            'Source archive: Empire-of-Kings-ci-snapshot-v2.zip' \
+            'This folder was added without deleting or overwriting the repository root.' \
+            > "$TARGET/SNAPSHOT_INFO.txt"
+          test -f "$TARGET/settings.gradle.kts"
+          test -f "$TARGET/app/src/main/assets/models/avatar_catalog.json"
+          test -f "$TARGET/app/src/main/java/com/aistudio/empireofkings/game/data/AvatarCatalog.kt"
+
+      - name: Commit the preserved snapshot folder
+        env:
+          TARGET: aetherfall_project_2026_08_11
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          git commit -m 'Add complete Aetherfall project snapshot 2026-08-11'
+          git push origin HEAD:main
