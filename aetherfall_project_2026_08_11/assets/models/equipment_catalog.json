@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "statusMeaning": {
+    "model_pending": "El nombre existe en el inventario, pero aún no hay GLB separado para Android.",
+    "model_ready_license_review": "Hay un GLB, pero falta cerrar el registro de licencia específico."
+  },
+  "entries": [
+    {"id":"outfit_royal","slot":"Atuendo","name":"Atuendo del Trono","model":null,"status":"model_pending"},
+    {"id":"outfit_night","slot":"Atuendo","name":"Guardia Nocturna","model":null,"status":"model_pending"},
+    {"id":"armor_azur","slot":"Armadura","name":"Coraza de Fuego Azur","model":null,"status":"model_pending"},
+    {"id":"cape_crown","slot":"Capa","name":"Capa de la Corona","model":null,"status":"model_pending"},
+    {"id":"cape_shadow","slot":"Capa","name":"Capa de Sombra","model":null,"status":"model_pending"},
+    {"id":"crown_iron","slot":"Corona","name":"Diadema de Hierro","model":null,"status":"model_pending"},
+    {"id":"amulet_sun","slot":"Accesorio","name":"Amuleto Solar","model":null,"status":"model_pending"},
+    {"id":"wpn_corona_king","slot":"Arma","name":"Corona del Rey","model":null,"status":"model_pending"},
+    {"id":"wpn_juicio_dorado","slot":"Arma","name":"Juicio Dorado","model":null,"status":"model_pending"},
+    {"id":"wpn_escopeta_abismo","slot":"Arma","name":"Escopeta del Abismo","model":null,"status":"model_pending"},
+    {"id":"wpn_tormenta_cristal","slot":"Arma","name":"Tormenta de Cristal","model":null,"status":"model_pending"},
+    {"id":"wpn_ojo_leon","slot":"Arma","name":"Ojo de León","model":null,"status":"model_pending"},
+    {"id":"wpn_baston_flama_azul","slot":"Arma","name":"Bastón Flama Azul","model":null,"status":"model_pending"},
+    {"id":"wpn_espada_mística","slot":"Arma","name":"Mandoble Imperial de León","model":null,"status":"model_pending"}
+  ]
+}
