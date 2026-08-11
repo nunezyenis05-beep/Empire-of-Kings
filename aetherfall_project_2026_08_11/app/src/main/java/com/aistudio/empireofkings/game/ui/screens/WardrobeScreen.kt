@@ -54,7 +54,7 @@ fun WardrobeScreen(
 
     Mystic3DBackground {
         Column(Modifier.fillMaxSize()) {
-            TopBar(userAccount, { onNavigate(ScreenRoute.Profile) }, onOpenPayment)
+            TopBar(userAccount, { onNavigate(ScreenRoute.Profile) }, onOpenPaymentModal)
             ReferenceTitle(
                 title = "VESTUARIO IMPERIAL",
                 subtitle = "Un avatar humano por selección • render nativo GLB animado",
