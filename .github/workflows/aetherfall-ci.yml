@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Download validated project snapshot
         run: |
-          curl -L --fail --retry 3 'https://share.zapia.com/ymzn6hmb7ulhw5d6at6n0g' -o /tmp/empire-of-kings.zip
+          curl -L --fail --retry 3 'https://share.zapia.com/credy2pujmpqoikrxeij8l' -o /tmp/empire-of-kings.zip
           mkdir -p project
           unzip -q /tmp/empire-of-kings.zip -d project
           test -f project/Empire-of-Kings/gradlew
