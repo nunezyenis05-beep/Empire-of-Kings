@@ -1002,6 +1002,267 @@
       "status": "model_pending",
       "gender": "male",
       "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "ref_weapon_mythic_01",
+      "slot": "Arma",
+      "name": "Cañón Castillo Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_02",
+      "slot": "Arma",
+      "name": "Rifle Cuervo Azul",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_03",
+      "slot": "Arma",
+      "name": "Revólver Ojo de Dragón",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_04",
+      "slot": "Arma",
+      "name": "Pistola Dorada Draconica",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_05",
+      "slot": "Arma",
+      "name": "Pistola Rosa Draconica",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_06",
+      "slot": "Arma",
+      "name": "Rifle Águila Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_07",
+      "slot": "Arma",
+      "name": "Rifle Dragón Dorado",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_08",
+      "slot": "Arma",
+      "name": "Rifle Cuervo Fantasma",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_09",
+      "slot": "Arma",
+      "name": "Rifle Cráneo Tóxico",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_10",
+      "slot": "Arma",
+      "name": "SMG Hidra Tricéfala",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_11",
+      "slot": "Arma",
+      "name": "Escopeta Kraken",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_12",
+      "slot": "Arma",
+      "name": "SMG Dragón Esmeralda",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_13",
+      "slot": "Arma",
+      "name": "SMG Espinas de Fuego",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_14",
+      "slot": "Arma",
+      "name": "Lanza de Cristal Azul",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_15",
+      "slot": "Arma",
+      "name": "Espada Fuego-Hielo",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_16",
+      "slot": "Arma",
+      "name": "Tridente Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_17",
+      "slot": "Arma",
+      "name": "Espada Fénix Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_18",
+      "slot": "Arma",
+      "name": "Cetro Llameante",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_19",
+      "slot": "Arma",
+      "name": "Maza Plateada Ardiente",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_20",
+      "slot": "Arma",
+      "name": "Pistola Dorada Ornamental",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_21",
+      "slot": "Arma",
+      "name": "Pistola Púrpura Ornamental",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_22",
+      "slot": "Arma",
+      "name": "Espada Alada Azul",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_23",
+      "slot": "Arma",
+      "name": "Espada Real Azul-Dorada",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_24",
+      "slot": "Arma",
+      "name": "Espada Alada Fuego-Noche",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_25",
+      "slot": "Arma",
+      "name": "AK Dragón Azul (Free Fire)",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_26",
+      "slot": "Arma",
+      "name": "Rifle Alado Espacial",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_27",
+      "slot": "Arma",
+      "name": "Cañón Castillo Carmesí (var.)",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_28",
+      "slot": "Arma",
+      "name": "Rifle Águila Cósmica",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
+    },
+    {
+      "id": "ref_weapon_mythic_29",
+      "slot": "Arma",
+      "name": "Cañón Castillo Dorado",
+      "model": null,
+      "status": "model_pending",
+      "collection": "WHATSAPP_ARMAS_MITICAS",
+      "referenceTemplate": "plantilla_armas.html"
     }
   ],
   "block001": {
@@ -1019,5 +1280,11 @@
     },
     "total": 100,
     "rule": "No entry may be marked ready until a separate licensed GLB exists and passes Android validation."
+  },
+  "weaponReferenceBatch": {
+    "status": "references_registered_model_pending",
+    "total": 29,
+    "source": "WhatsApp ZIP plantilla_armas.html",
+    "rule": "A reference image is not a GLB; do not mark ready without a real licensed model."
   }
 }
