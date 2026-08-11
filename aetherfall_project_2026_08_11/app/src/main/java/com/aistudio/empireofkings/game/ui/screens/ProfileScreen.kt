@@ -130,7 +130,7 @@ fun ProfileScreen(
                     ReferencePanel(Modifier.fillMaxWidth()) {
                         Column(Modifier.padding(12.dp)) {
                             ReferenceTitle("ESTADÍSTICAS DEL IMPERIO")
-                            Divider(color = GoldBorder.copy(alpha = .3f), Modifier.padding(vertical = 7.dp))
+                            Divider(color = GoldBorder.copy(alpha = .3f), modifier = Modifier.padding(vertical = 7.dp))
                             StatRow("Victorias totales", "${user.totalWins}")
                             StatRow("Bajas totales", "${user.totalKills}")
                             StatRow("Proporción K/D", "${(user.totalKills.toFloat() / user.totalWins.coerceAtLeast(1)).let { "%.1f".format(it) }}")
