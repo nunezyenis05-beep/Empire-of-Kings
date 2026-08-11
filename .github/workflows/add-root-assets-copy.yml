@@ -1,0 +1,40 @@
+name: Add visible root assets folder to Aetherfall snapshot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add a root assets copy without changing Android paths
+        run: |
+          TARGET=aetherfall_project_2026_08_11
+          test -d "$TARGET/app/src/main/assets"
+          test ! -e "$TARGET/assets"
+          mkdir -p "$TARGET/assets"
+          cp -a "$TARGET/app/src/main/assets/." "$TARGET/assets/"
+          printf '%s\n' \
+            'Root assets copy for project inspection.' \
+            'The Android build continues to use app/src/main/assets.' \
+            'The resources are duplicated here only to make assets and 3D files visible at the project root.' \
+            > "$TARGET/assets/README.md"
+          test -f "$TARGET/assets/models/avatars/maya.glb"
+          test -f "$TARGET/assets/models/avatars/isaac.glb"
+
+      - name: Commit root assets copy
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add aetherfall_project_2026_08_11/assets
+          git commit -m 'Expose 3D assets in project snapshot root'
+          git push origin HEAD:main
