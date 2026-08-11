@@ -1,0 +1,991 @@
+{
+  "schema": 1,
+  "sourceCount": 4,
+  "imageCount": 82,
+  "images": [
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Premium — Ángeles, Diablos y Místicos",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_premium_ángeles_diablos_y_místicos_85375eb1df.jpg",
+      "sha256": "85375eb1df6471161a80fcb741435bd7e95e613af172e2447746ca7c76f426b5",
+      "bytes": 351256,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Premium Fundadores",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_premium_fundadores_542f1053a3.jpg",
+      "sha256": "542f1053a3b04e6f4cdb9ad8eef3ece02170df4bc5724b71935c3b9acd44f380",
+      "bytes": 292055,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "30 Pelos Premium + 30 Maquillajes Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/30_pelos_premium_30_maquillajes_premium_7667a5537d.jpg",
+      "sha256": "7667a5537d40f512e12cfa0e1767078587f1d9fe0cc0c7f03a3132f1d7f84121",
+      "bytes": 370600,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Místicos Premium — Masculinos",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_místicos_premium_masculinos_1065b1095c.jpg",
+      "sha256": "1065b1095c0a7526e4e707f7ccf7eef29115d80818e9faac50f2b3d58acaa970",
+      "bytes": 343551,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "10 Outfits Completos Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/10_outfits_completos_premium_266ae3efb3.jpg",
+      "sha256": "266ae3efb350d29c4fe52ea2771579d5d5376a7e754f1dbbbec5ff48182e18e7",
+      "bytes": 281489,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_1",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Ropa Femenina Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/ropa_femenina_premium_89a52c1c08.jpg",
+      "sha256": "89a52c1c08a2ddf27933057dc7b1450033f7952c56104574f9edfe68373344d1",
+      "bytes": 370127,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_2",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "20 Mascotas Místicas — Adultas",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/20_mascotas_místicas_adultas_9a15b49ce3.jpg",
+      "sha256": "9a15b49ce36ff818d55e532650b0b4f884ce96273dbf81863587340b1f5618b6",
+      "bytes": 480890,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_2",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "20 Mascotas Baby",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/20_mascotas_baby_c9604d632e.jpg",
+      "sha256": "c9604d632edcb9054c3428c3517c87ffe82b4621af4d61c5cf9346b20135c6cc",
+      "bytes": 307649,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_2",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "40 Mascotas Místicas — Colección Extendida",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/40_mascotas_místicas_colección_extendida_80b17a1077.jpg",
+      "sha256": "80b17a107765f5595974c7a28f077edae92caf57b251be9b6bfcf918abcdb133",
+      "bytes": 402409,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Cañón Castillo Carmesí",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/cañón_castillo_carmesí_4ed5f589b6.webp",
+      "sha256": "4ed5f589b6ad9e9722b94c39895933a2c1ae3ca4e9f3520d78b1032422555b9b",
+      "bytes": 498456,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Cuervo Azul",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_cuervo_azul_f270565481.webp",
+      "sha256": "f27056548123237ff95007525e97cd58d80688fbc44471af5a02642032c1b48f",
+      "bytes": 515872,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Revólver Ojo de Dragón",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/revólver_ojo_de_dragón_4adf400dcc.webp",
+      "sha256": "4adf400dcca44ecccff5ef7be3ff826e3f90e7f18e72b37d5e9fdca9c4a3edf0",
+      "bytes": 392910,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Pistola Dorada Draconica",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/pistola_dorada_draconica_b68a21c3cb.webp",
+      "sha256": "b68a21c3cb386064ad123abb9adeca9db3528dca2526f0fe2357bf83f9dbf7a0",
+      "bytes": 500626,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Pistola Rosa Draconica",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/pistola_rosa_draconica_eb08c247eb.webp",
+      "sha256": "eb08c247eb287abfe86138f926812b00d327fe90862e435b131f4877300baf48",
+      "bytes": 371374,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Águila Carmesí",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_águila_carmesí_f512f9af78.webp",
+      "sha256": "f512f9af78b07f7b91e7ae091369104093ac83c9114a2c58a2af56af7db3e66c",
+      "bytes": 417438,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Dragón Dorado",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_dragón_dorado_126dabc608.webp",
+      "sha256": "126dabc6081ffff14b4c06609951389ffd040e65748b86ceda01a561e53446d8",
+      "bytes": 389210,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Cuervo Fantasma",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_cuervo_fantasma_8c54d8ce4f.webp",
+      "sha256": "8c54d8ce4fe6c9e7ff6b9766c3f2485a9bd5b1d05ae438dd020292c0e21816e3",
+      "bytes": 413518,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Cráneo Tóxico",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_cráneo_tóxico_f42e373f67.webp",
+      "sha256": "f42e373f675c6ab5dba91e0c910e829ab006c732ace3880ddccdd9129e6ec446",
+      "bytes": 421190,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "SMG Hidra Tricéfala",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/smg_hidra_tricéfala_c27105598a.webp",
+      "sha256": "c27105598a97b6e9a8be1fff35172238a8ba9b63f2b661c7a0576e030ceed6df",
+      "bytes": 459686,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Escopeta Kraken",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/escopeta_kraken_57f8508969.webp",
+      "sha256": "57f850896958ae39588ded4d7dff7307dcaf326ae6f800ced9f4dc852d2b7319",
+      "bytes": 475634,
+      "size": [
+        2736,
+        912
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "SMG Dragón Esmeralda",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/smg_dragón_esmeralda_7928c1b024.webp",
+      "sha256": "7928c1b024a9db7684e1a66b126fc1acbce8aefc810d1611e94e75472b7ffba1",
+      "bytes": 421064,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "SMG Espinas de Fuego",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/smg_espinas_de_fuego_6413fe4eeb.webp",
+      "sha256": "6413fe4eeb5da642084d2a687d2efa3ebb0dc1831c78ffd0cdd53cae95b1db54",
+      "bytes": 412528,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Lanza de Cristal Azul",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/lanza_de_cristal_azul_16653cd9d8.jpg",
+      "sha256": "16653cd9d83d5b631f13ddbf0bb5710ad3e90815dd737b50299130012c1efe06",
+      "bytes": 40166,
+      "size": [
+        632,
+        632
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Espada Fuego-Hielo",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/espada_fuego-hielo_e5e57b7c9c.jpg",
+      "sha256": "e5e57b7c9c3eb6c89a668176be49ae935c3a3e681c78115c546d7e5596819b58",
+      "bytes": 60278,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Tridente Carmesí",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/tridente_carmesí_c9c7f521a5.jpg",
+      "sha256": "c9c7f521a52ec3a4a250619ce437d7af74b17ccca9ae1917fc041cb2c1236d7e",
+      "bytes": 60709,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Espada Fénix Carmesí",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/espada_fénix_carmesí_2cd0b81cfc.jpg",
+      "sha256": "2cd0b81cfca8520f7cc2ef55858e15f3b820a67b8d62bd743f57300191e0c1a2",
+      "bytes": 55082,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Cetro Llameante",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/cetro_llameante_d417efbdbf.jpg",
+      "sha256": "d417efbdbfc6c6445f2d9f99574e479b164b2d75dceac0298c58d1a4875a2c44",
+      "bytes": 65436,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Maza Plateada Ardiente",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/maza_plateada_ardiente_73645d8f4a.jpg",
+      "sha256": "73645d8f4a42f8c266cef7036371ccc21b193b71d63f192e73d44dcdab0d408a",
+      "bytes": 59303,
+      "size": [
+        632,
+        632
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Pistola Dorada Ornamental",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/pistola_dorada_ornamental_076fc668e7.jpg",
+      "sha256": "076fc668e7969db1f90be30c66cadec7dfd457d1499d97e54623c0d4ce84667e",
+      "bytes": 42681,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Pistola Púrpura Ornamental",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/pistola_púrpura_ornamental_4e8c298133.jpg",
+      "sha256": "4e8c2981338ea70f85c94bb0a90ee03137159720966e53944e0da379bdc98e7f",
+      "bytes": 32642,
+      "size": [
+        632,
+        632
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Espada Alada Azul",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/espada_alada_azul_bf2a562c60.jpg",
+      "sha256": "bf2a562c6035405b1e3b6fcf42a28b680a77358d5fd7a6d1051322a4341fa48d",
+      "bytes": 46070,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Espada Real Azul-Dorada",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/espada_real_azul-dorada_e7568c974d.jpg",
+      "sha256": "e7568c974dbeb03db1764b817db074740ac2a1467d7f1641eeac0082446e2a5b",
+      "bytes": 46672,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Espada Alada Fuego-Noche",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/espada_alada_fuego-noche_2cd3ae704c.jpg",
+      "sha256": "2cd3ae704c05e3cbb2b134fe6e28ea590ed31cd6ee4c1e2dcb5caf5f232adf78",
+      "bytes": 51521,
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "AK Dragón Azul (Free Fire)",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/ak_dragón_azul_free_fire_83c9eda8c9.webp",
+      "sha256": "83c9eda8c9f7a8f9c2d4b28ae7a96fe9835945543e5fd88703ec8d24944dfe0d",
+      "bytes": 485448,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Alado Espacial",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_alado_espacial_44e641f145.jpg",
+      "sha256": "44e641f145bea45bbac7e399acbe6ef92b65166e06077a4dc50d5d194acedc70",
+      "bytes": 352949,
+      "size": [
+        720,
+        1612
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Cañón Castillo Carmesí (var.)",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/cañón_castillo_carmesí_var_ec2508d8da.jpg",
+      "sha256": "ec2508d8dad1342e82e654e03a480b0687d2f7867e8c1d9f63df4fc11c2f511d",
+      "bytes": 257454,
+      "size": [
+        720,
+        1612
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Rifle Águila Cósmica",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/rifle_águila_cósmica_a09e69d510.jpg",
+      "sha256": "a09e69d51091fb04992854dcb09cc90f007d2e730d82e74853fd7163c4c41f73",
+      "bytes": 276043,
+      "size": [
+        720,
+        1612
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas.html",
+      "template": "armas_míticas_empire_of_kings",
+      "title": "Cañón Castillo Dorado",
+      "path": "whatsapp_3d_refs/armas_míticas_empire_of_kings/cañón_castillo_dorado_c16ea2841c.jpg",
+      "sha256": "c16ea2841cf342cf5f0c193796a57e15eadbc38f8a3e2773a30e1197925580c2",
+      "bytes": 206934,
+      "size": [
+        720,
+        1612
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Arsenal Real de Azureth — Catálogo Completo",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/arsenal_real_de_azureth_catálogo_completo_9afbe887e1.jpg",
+      "sha256": "9afbe887e11e7db22a64947412e711b970adacd587063da37c5b4d3630e7b925",
+      "bytes": 306901,
+      "size": [
+        1369,
+        1149
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Arsenal Real de Azureth — Panel de Juego",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/arsenal_real_de_azureth_panel_de_juego_c5e6c65c0b.jpg",
+      "sha256": "c5e6c65c0b409606962c8f8a170d08eb7971b1203240425874092328680aa228",
+      "bytes": 301426,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Forja Real — Catálogo de Armas",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/forja_real_catálogo_de_armas_f0c3d64132.jpg",
+      "sha256": "f0c3d64132469f548e533f8e7fe31853d04a0222b9874e70af46041550f35145",
+      "bytes": 272811,
+      "size": [
+        1369,
+        1149
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Rifle Cósmico Azul",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/rifle_cósmico_azul_ce3625ce96.jpg",
+      "sha256": "ce3625ce96b469a0cf8a1f67a77d9eae11062c6e2ab959a5bb2aa76dc0b698cf",
+      "bytes": 58593,
+      "size": [
+        720,
+        1612
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Set de Armas Azules",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/set_de_armas_azules_124d136694.jpg",
+      "sha256": "124d1366944f46cfe43ae6dcc3bfcb55d521445c93bd0cebbc9cf7e03e28d438",
+      "bytes": 150827,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_armas_referencia.html",
+      "template": "arsenal_catálogos_de_referencia_empire_of_kings",
+      "title": "Rifle Dragón de Fuego Azul",
+      "path": "whatsapp_3d_refs/arsenal_catálogos_de_referencia_empire_of_kings/rifle_dragón_de_fuego_azul_007e70526b.jpg",
+      "sha256": "007e70526b19e92d4c96ffb1be472e8b9b1620e0ab0bee022100f9f96709e99c",
+      "bytes": 241631,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Vista Detalle — Besos Imperiales",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/vista_detalle_besos_imperiales_dfbd32b956.jpg",
+      "sha256": "dfbd32b95648a132cb44ad74583eb595f049b3656f66c1166f19e2bff1f4eb7e",
+      "bytes": 230507,
+      "size": [
+        1313,
+        1198
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Vista Detalle — Regalo Imperial",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/vista_detalle_regalo_imperial_3537b51579.jpg",
+      "sha256": "3537b515790b28f73d9093c723321cc4ad45abe35ed131bfa0f2eb3240ddb4cc",
+      "bytes": 230950,
+      "size": [
+        1400,
+        763
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Vista Detalle — Ira Real",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/vista_detalle_ira_real_dedbab819e.jpg",
+      "sha256": "dedbab819e632d47c9b1fb255c837ddd19c3c8335b706fb812ac2d337d7bca42",
+      "bytes": 191750,
+      "size": [
+        1400,
+        763
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Emotes Místicos — Set 1",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/emotes_místicos_set_1_71bad280b4.jpg",
+      "sha256": "71bad280b4c6f784ab80097d4ac3fb0bf19d8a446f75c4c8233e84e950bcf29d",
+      "bytes": 268624,
+      "size": [
+        1203,
+        1307
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Emotes Místicos — Set 2",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/emotes_místicos_set_2_9b147b2195.jpg",
+      "sha256": "9b147b21953305a5622d7b50ab2608a40688408446a0018e49679d3d90f81456",
+      "bytes": 279287,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Emotes Épicos — Femeninos Set 1",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/emotes_épicos_femeninos_set_1_b50bfabaef.jpg",
+      "sha256": "b50bfabaef5033d28d73de9d318354006c11c7b7caf68e9a3ace534db6372866",
+      "bytes": 328581,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Emotes Épicos — Femeninos Set 2",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/emotes_épicos_femeninos_set_2_96f6eab868.jpg",
+      "sha256": "96f6eab86841261f3453c8b81c204dfcbf56d335126a77b8b9c120cd0180106d",
+      "bytes": 265259,
+      "size": [
+        1369,
+        1149
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Emotes Épicos — Duo",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/emotes_épicos_duo_557d5b0236.jpg",
+      "sha256": "557d5b02363697de3e91255aa1c9375c1ea6688fcadd49b9b51a9b6659693ed9",
+      "bytes": 253158,
+      "size": [
+        1181,
+        1331
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_emotes.html",
+      "template": "emotes_del_reino_empire_of_kings",
+      "title": "Nuevos Emotes Épicos",
+      "path": "whatsapp_3d_refs/emotes_del_reino_empire_of_kings/nuevos_emotes_épicos_ce0fb77e28.jpg",
+      "sha256": "ce0fb77e2820f1e6cecc86376d1a8db2f34382abc52cce02d8fe3bb9852847be",
+      "bytes": 361012,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_inventario_referencia.html",
+      "template": "inventario_hojas_de_referencia_empire_of_kings",
+      "title": "Accesorios y Vestuario Femenino",
+      "path": "whatsapp_3d_refs/inventario_hojas_de_referencia_empire_of_kings/accesorios_y_vestuario_femenino_e20a048452.jpg",
+      "sha256": "e20a048452da28220f6217e6ec879d5fa5b67867f73086f04ffb34c26879431f",
+      "bytes": 342845,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_inventario_referencia.html",
+      "template": "inventario_hojas_de_referencia_empire_of_kings",
+      "title": "Plantillas Faltantes del Inventario 3D",
+      "path": "whatsapp_3d_refs/inventario_hojas_de_referencia_empire_of_kings/plantillas_faltantes_del_inventario_3d_61e34c73c7.jpg",
+      "sha256": "61e34c73c77f2b072d1e4d4651e2cba73c639823e93224c38cdb1eb960d04246",
+      "bytes": 327576,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_inventario_referencia.html",
+      "template": "inventario_hojas_de_referencia_empire_of_kings",
+      "title": "Inventario 3D Completo",
+      "path": "whatsapp_3d_refs/inventario_hojas_de_referencia_empire_of_kings/inventario_3d_completo_ed66cd90e2.jpg",
+      "sha256": "ed66cd90e22f492407ee4446dd7155f0e5ea3145e64f1ac8eda809beb54949b9",
+      "bytes": 307926,
+      "size": [
+        1181,
+        1331
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_inventario_referencia.html",
+      "template": "inventario_hojas_de_referencia_empire_of_kings",
+      "title": "Inventario 3D — Ropa Masculina",
+      "path": "whatsapp_3d_refs/inventario_hojas_de_referencia_empire_of_kings/inventario_3d_ropa_masculina_86d3c5728f.jpg",
+      "sha256": "86d3c5728f3600790081faf5b4eeb4f6186b33e2d048b1969a8c38f0a54564fe",
+      "bytes": 276950,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_inventario_referencia.html",
+      "template": "inventario_hojas_de_referencia_empire_of_kings",
+      "title": "Colección Imperial — Accesorios",
+      "path": "whatsapp_3d_refs/inventario_hojas_de_referencia_empire_of_kings/colección_imperial_accesorios_adce6c0a78.jpg",
+      "sha256": "adce6c0a7887d5100b9db3432342693a8be1117be5b0c119bee48d6aad226052",
+      "bytes": 339816,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_mascotas.html",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "20 Mascotas Místicas — Adultas",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/20_mascotas_místicas_adultas_9a15b49ce3.jpg",
+      "sha256": "9a15b49ce36ff818d55e532650b0b4f884ce96273dbf81863587340b1f5618b6",
+      "bytes": 480890,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_mascotas.html",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "20 Mascotas Baby",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/20_mascotas_baby_c9604d632e.jpg",
+      "sha256": "c9604d632edcb9054c3428c3517c87ffe82b4621af4d61c5cf9346b20135c6cc",
+      "bytes": 307649,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_mascotas.html",
+      "template": "mascotas_místicas_empire_of_kings",
+      "title": "40 Mascotas Místicas — Colección Extendida",
+      "path": "whatsapp_3d_refs/mascotas_místicas_empire_of_kings/40_mascotas_místicas_colección_extendida_80b17a1077.jpg",
+      "sha256": "80b17a107765f5595974c7a28f077edae92caf57b251be9b6bfcf918abcdb133",
+      "bytes": 402409,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Escudos Angelicales",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/escudos_angelicales_d0dff4adb1.webp",
+      "sha256": "d0dff4adb16c462ab3d859a05f5ba550cf77063d23668fde466dc8ccc6649b22",
+      "bytes": 541578,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Ballestas Angelicales",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/ballestas_angelicales_d18eb8964b.webp",
+      "sha256": "d18eb8964b889937237960644e53d282335249615dd2296b09f9e8fa0c12b109",
+      "bytes": 519860,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Espadas Demoníacas Llameantes",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/espadas_demoníacas_llameantes_7adaa3fa28.webp",
+      "sha256": "7adaa3fa28ccfc2b284f0e0f1ced1e427b701c13c79d2c289044f69a4b97977a",
+      "bytes": 394300,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Blasones de Dragón",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/blasones_de_dragón_e26de69a74.webp",
+      "sha256": "e26de69a746988db49dabf8812c9832fe5514432d9c0a46a1492d9e07057494e",
+      "bytes": 623550,
+      "size": [
+        2480,
+        992
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Hachas de Dragón Encadenadas",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/hachas_de_dragón_encadenadas_70e4fd6291.webp",
+      "sha256": "70e4fd6291cf105d63c2601a81f1b70f8eabe2b07dbb66cc05b85d3d19e953fc",
+      "bytes": 617246,
+      "size": [
+        2736,
+        912
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_rareza.html",
+      "template": "arsenal_legendario_empire_of_kings",
+      "title": "Lanzas Angelicales",
+      "path": "whatsapp_3d_refs/arsenal_legendario_empire_of_kings/lanzas_angelicales_5bb3268f73.webp",
+      "sha256": "5bb3268f739a02ebb4a461b42ddd1eb841a71d9e408195c04447d70085a5cab4",
+      "bytes": 443848,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Set Accesorios Conejita Rosa",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/set_accesorios_conejita_rosa_e677dfda51.webp",
+      "sha256": "e677dfda516bc49f0cfa1efa7829d589429216ec43e7dc69cb2d8b7795b05ada",
+      "bytes": 214168,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Rosa Satín",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_rosa_satín_d5fe2f2e89.webp",
+      "sha256": "d5fe2f2e89a2caaca75b8bb51290b630538d49fc54cc0f093067da7aa5b9ebf9",
+      "bytes": 224626,
+      "size": [
+        1344,
+        1792
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Gótica Rosa-Negro",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_gótica_rosa-negro_8d6c8d32a5.webp",
+      "sha256": "8d6c8d32a5877190420660f32c4e146ad3a5ec4c544920c6a447d3ea9fc6a342",
+      "bytes": 233078,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Casual Blanco-Negro",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_casual_blanco-negro_6783abe013.webp",
+      "sha256": "6783abe0139d6a344ec9f2988fa056fe057b923f0bf4a7366aac28bf4190079a",
+      "bytes": 89932,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Rosa-Negro Deportivo",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_rosa-negro_deportivo_9e9daff37c.webp",
+      "sha256": "9e9daff37c2901216d473219a40ae7514eb2cec6cc68bbb13c8c4abc6ee9ee80",
+      "bytes": 245110,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Blanco Lolita",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_blanco_lolita_89a42e78a8.webp",
+      "sha256": "89a42e78a8d82b273add247968b3d6aea968c6c6046ddced653c02b1835de10d",
+      "bytes": 232106,
+      "size": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Rojo-Negro",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_rojo-negro_46f429b6f4.webp",
+      "sha256": "46f429b6f4eaec8cd1a331a3e73bcae1679a019924373cf2e281dbb62773011e",
+      "bytes": 264146,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Negro-Dorado",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_negro-dorado_355cd5c50f.webp",
+      "sha256": "355cd5c50f6fac4a0fa684c06103d140e735d7b670fb7cbd9c5bd1488859a7e4",
+      "bytes": 299588,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes.html",
+      "template": "trajes_accesorios_empire_of_kings",
+      "title": "Traje Conejita Azul-Dorado",
+      "path": "whatsapp_3d_refs/trajes_accesorios_empire_of_kings/traje_conejita_azul-dorado_c776459441.webp",
+      "sha256": "c7764594417d5930c857779c4d4034af4824aa9587964282fdbc94e998e206f0",
+      "bytes": 271598,
+      "size": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Premium — Ángeles, Diablos y Místicos",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_premium_ángeles_diablos_y_místicos_85375eb1df.jpg",
+      "sha256": "85375eb1df6471161a80fcb741435bd7e95e613af172e2447746ca7c76f426b5",
+      "bytes": 351256,
+      "size": [
+        1400,
+        1120
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Premium Fundadores",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_premium_fundadores_542f1053a3.jpg",
+      "sha256": "542f1053a3b04e6f4cdb9ad8eef3ece02170df4bc5724b71935c3b9acd44f380",
+      "bytes": 292055,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "30 Pelos Premium + 30 Maquillajes Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/30_pelos_premium_30_maquillajes_premium_7667a5537d.jpg",
+      "sha256": "7667a5537d40f512e12cfa0e1767078587f1d9fe0cc0c7f03a3132f1d7f84121",
+      "bytes": 370600,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Trajes Místicos Premium — Masculinos",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/trajes_místicos_premium_masculinos_1065b1095c.jpg",
+      "sha256": "1065b1095c0a7526e4e707f7ccf7eef29115d80818e9faac50f2b3d58acaa970",
+      "bytes": 343551,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "10 Outfits Completos Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/10_outfits_completos_premium_266ae3efb3.jpg",
+      "sha256": "266ae3efb350d29c4fe52ea2771579d5d5376a7e754f1dbbbec5ff48182e18e7",
+      "bytes": 281489,
+      "size": [
+        1400,
+        933
+      ]
+    },
+    {
+      "source": "whatsapp_3d_file_4:plantilla_trajes_premium.html",
+      "template": "trajes_personalización_premium_empire_of_kings",
+      "title": "Ropa Femenina Premium",
+      "path": "whatsapp_3d_refs/trajes_personalización_premium_empire_of_kings/ropa_femenina_premium_89a52c1c08.jpg",
+      "sha256": "89a52c1c08a2ddf27933057dc7b1450033f7952c56104574f9edfe68373344d1",
+      "bytes": 370127,
+      "size": [
+        1400,
+        933
+      ]
+    }
+  ]
+}
