@@ -158,7 +158,7 @@ private fun WardrobeContent(
                         Spacer(Modifier.height(7.dp))
                         Text(item.name, color = GoldPrimary, fontSize = 16.sp, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Serif)
                         Text("${item.slot} • ${item.rarity}", color = CyanMagic, fontSize = 10.sp)
-                        Divider(color = GoldBorder.copy(alpha = .3f), Modifier.padding(vertical = 7.dp))
+                        Divider(color = GoldBorder.copy(alpha = .3f), modifier = Modifier.padding(vertical = 7.dp))
                         Text(item.description, color = TextLight, fontSize = 11.sp, lineHeight = 14.sp)
                     }
                     Column {
@@ -204,7 +204,7 @@ private fun WeaponContent(
                     Column {
                         Text(weapon.name, color = GoldPrimary, fontSize = 16.sp, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Serif)
                         Text("NIVEL ${weapon.level}/15 • ${if (weapon.isMysticalPremium) "MÍSTICA" else "NORMAL"}", color = CyanMagic, fontSize = 10.sp)
-                        Divider(color = GoldBorder.copy(alpha = .3f), Modifier.padding(vertical = 7.dp))
+                        Divider(color = GoldBorder.copy(alpha = .3f), modifier = Modifier.padding(vertical = 7.dp))
                         Text(weapon.description, color = TextLight, fontSize = 11.sp)
                         Spacer(Modifier.height(8.dp))
                         StatBar("Daño", weapon.damage, 120, GoldPrimary)
@@ -215,8 +215,8 @@ private fun WeaponContent(
                     Column {
                         feedback?.let { Text(it, color = GoldGlow, fontSize = 10.sp, modifier = Modifier.padding(bottom = 5.dp)) }
                         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                            OutlinedButton(onClick = { onEquip(weapon.id) }, Modifier.weight(1f).height(40.dp), border = androidx.compose.foundation.BorderStroke(1.dp, GoldBorder)) { Text("EQUIPAR", color = GoldGlow, fontSize = 10.sp) }
-                            Button(onClick = { onUpgrade(weapon) { _, _ -> } }, Modifier.weight(1.2f).height(40.dp), colors = ButtonDefaults.buttonColors(containerColor = GoldPrimary)) { Text("MEJORAR", color = Color.Black, fontSize = 10.sp, fontWeight = FontWeight.Black) }
+                            OutlinedButton(onClick = { onEquip(weapon.id) }, modifier = Modifier.weight(1f).height(40.dp), border = androidx.compose.foundation.BorderStroke(1.dp, GoldBorder)) { Text("EQUIPAR", color = GoldGlow, fontSize = 10.sp) }
+                            Button(onClick = { onUpgrade(weapon) { _, _ -> } }, modifier = Modifier.weight(1.2f).height(40.dp), colors = ButtonDefaults.buttonColors(containerColor = GoldPrimary)) { Text("MEJORAR", color = Color.Black, fontSize = 10.sp, fontWeight = FontWeight.Black) }
                         }
                     }
                 }
