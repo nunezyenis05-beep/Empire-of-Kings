@@ -314,7 +314,7 @@ class EmpireViewModel(application: Application) : AndroidViewModel(application) 
                 if (snapshot.id != effectivePlayerId) {
                     _remotePlayers.update { current ->
                         val updated = current + (snapshot.id to snapshot)
-                        if (updated.size <= 6) updated else updated.entries.takeLast(6).associate { it.key to it.value }
+                        if (updated.size <= 6) updated else updated.entries.toList().takeLast(6).associate { it.key to it.value }
                     }
                 }
             },
@@ -332,7 +332,7 @@ class EmpireViewModel(application: Application) : AndroidViewModel(application) 
                     _remoteLoadouts.update { current ->
                         val updated = current + (loadout.id to loadout)
                         if (updated.size <= 6) updated
-                        else updated.entries.takeLast(6).associate { it.key to it.value }
+                        else updated.entries.toList().takeLast(6).associate { it.key to it.value }
                     }
                 }
             },
