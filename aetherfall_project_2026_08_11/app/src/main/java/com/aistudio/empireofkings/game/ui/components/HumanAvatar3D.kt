@@ -61,15 +61,15 @@ fun HumanAvatar3D(
             }
         ) {
             modelInstance?.let { instance ->
+                // SceneView starts the first embedded animation when autoAnimate
+                // is enabled. This keeps the renderer compatible with the current
+                // SceneView API while the catalog continues to document each
+                // asset's neutral idle clip.
                 ModelNode(
                     modelInstance = instance,
                     scaleToUnits = 2.0f,
-                    autoAnimate = false
-                ).apply {
-                    // Play only the catalogued neutral clip. Asset clip names are
-                    // kept verbatim from each independently converted source.
-                    playAnimation(definition.idleAnimationName)
-                }
+                    autoAnimate = true
+                )
             }
         }
         if (modelInstance == null && showLoadingLabel) {
