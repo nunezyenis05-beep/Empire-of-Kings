@@ -459,6 +459,7 @@ fun BattleRoyaleScreen(
                         }
                         rosterPlayers.forEachIndexed { index, playerId ->
                             val isLocalPlayer = playerId == localPlayerId
+                            val remoteLoadout = remoteLoadouts.firstOrNull { it.id == playerId }
                             Row(
                                 modifier = Modifier.fillMaxWidth().padding(top = 3.dp),
                                 horizontalArrangement = Arrangement.spacedBy(6.dp),
@@ -478,7 +479,6 @@ fun BattleRoyaleScreen(
                                     showLoadingLabel = false
                                 )
                                 Text(if (index == 0) "👑" else "⚔️", fontSize = 10.sp)
-                                val remoteLoadout = remoteLoadouts.firstOrNull { it.id == playerId }
                                 val loadoutLabel = when {
                                     isLocalPlayer -> "$outfitName · $equippedWeaponName"
                                     remoteLoadout != null -> "${remoteLoadout.outfit} · ${remoteLoadout.weapon} · ${remoteLoadout.armor} · ${remoteLoadout.accessory}"
