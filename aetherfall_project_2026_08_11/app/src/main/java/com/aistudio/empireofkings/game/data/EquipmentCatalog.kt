@@ -36,7 +36,7 @@ object EquipmentCatalog {
         EquipmentDefinition("wpn_tormenta_cristal", "Arma", "Tormenta de Cristal"),
         EquipmentDefinition("wpn_ojo_leon", "Arma", "Ojo de León"),
         EquipmentDefinition("wpn_baston_flama_azul", "Arma", "Bastón Flama Azul"),
-        EquipmentDefinition("wpn_espada_mística", "Arma", "Mandoble Imperial de León")
+        EquipmentDefinition("wpn_espada_mística", "Arma", "Mandoble Imperial de León"),
         EquipmentDefinition("m_tops_01", "Pulóver/top", "Pulóver Imperial"),
         EquipmentDefinition("m_tops_02", "Pulóver/top", "Pulóver Místico"),
         EquipmentDefinition("m_tops_03", "Pulóver/top", "Pulóver Arcano"),
