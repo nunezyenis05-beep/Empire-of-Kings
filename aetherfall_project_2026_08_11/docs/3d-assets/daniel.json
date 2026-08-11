@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "daniel",
+  "displayName": "Daniel",
+  "genderPresentation": "male",
+  "sourceFile": "/app/state/6a5f3110-406e-426e-a2ab-7e9a3be63d69/work/converted_variants/Doctor_Male_Young.glb",
+  "sourceSha256": "64149386b82e8c794caa9f44e372cc7dbb2ece9c9c318ab8923e0a1b1d189de6",
+  "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+  "license": "CC0 1.0 Universal",
+  "licenseStatus": "verified",
+  "attribution": "Quaternius (attribution appreciated; not required by CC0)",
+  "androidContract": {
+    "glbVersion": 2,
+    "meshCount": 1,
+    "skinCount": 1,
+    "animationNames": [
+      "CharacterArmature|Defeat",
+      "CharacterArmature|Idle",
+      "CharacterArmature|PickUp",
+      "CharacterArmature|Punch",
+      "CharacterArmature|RecieveHit",
+      "CharacterArmature|Shoot_OneHanded",
+      "CharacterArmature|SitDown",
+      "CharacterArmature|StandUp",
+      "CharacterArmature|Victory",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Walk_Carry"
+    ]
+  },
+  "status": "integrated_static_contract_validated",
+  "manualGates": [
+    "run CharacterArmature|Idle on an Android device/emulator",
+    "confirm final visual quality is acceptable for the premium cast"
+  ],
+  "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+  "sourceArchiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+  "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+  "visualReview": "Independent Quaternius source integrated; Android device/emulator lighting, animation playback and premium visual acceptance remain unverified."
+}

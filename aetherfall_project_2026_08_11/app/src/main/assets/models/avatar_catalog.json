@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "defaultLanguage": "es",
+  "fallbackModel": "models/Xbot.glb",
+  "entries": [
+    {
+      "id": "maya",
+      "name": "Maya",
+      "gender": "female",
+      "model": "models/avatars/maya.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "gender": "female",
+      "model": "models/avatars/sofia.glb",
+      "idleAnimation": "CharacterArmature|Idle",
+      "status": "licensed_human_source_android_contract_validated"
+    },
+    {
+      "id": "amara",
+      "name": "Amara",
+      "gender": "female",
+      "model": "models/avatars/amara.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "elena",
+      "name": "Elena",
+      "gender": "female",
+      "model": "models/avatars/elena.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "nadia",
+      "name": "Nadia",
+      "gender": "female",
+      "model": "models/avatars/nadia.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "gender": "male",
+      "model": "models/avatars/leo.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "Human Armature|Idle"
+    },
+    {
+      "id": "mateo",
+      "name": "Mateo",
+      "gender": "male",
+      "model": "models/avatars/mateo.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "karim",
+      "name": "Karim",
+      "gender": "male",
+      "model": "models/avatars/karim.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "gender": "male",
+      "model": "models/avatars/daniel.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "isaac",
+      "name": "Isaac",
+      "gender": "male",
+      "model": "models/avatars/isaac.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    }
+  ],
+  "legacyAliases": [
+    {
+      "id": "king_warrior",
+      "model": "models/avatars/leo.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "Human Armature|Idle"
+    },
+    {
+      "id": "royal_guard",
+      "model": "models/avatars/mateo.glb",
+      "status": "licensed_human_source_android_contract_validated",
+      "idleAnimation": "CharacterArmature|Idle"
+    },
+    {
+      "id": "arcane_queen",
+      "model": "models/avatars/sofia.glb",
+      "idleAnimation": "CharacterArmature|Idle",
+      "status": "licensed_human_source_android_contract_validated"
+    }
+  ],
+  "sourceReview": {
+    "validatedAndroidAsset": "models/Xbot.glb",
+    "finalTenModels": "all_ten_slots_now_use_independently authored Quaternius CC0 sources",
+    "variantCount": 0,
+    "variantMethod": "no Sophia-derived variants remain in the ten active avatar slots",
+    "finalStatus": "NOT_COMPLETE_device_and_premium_visual_validation_pending",
+    "maleSource": "Quaternius Animated Human (integrated into stable leo slot)",
+    "allCurrentVariants": "none; all ten active avatar slots now use independently authored Quaternius CC0 sources",
+    "importPipeline": "tools/import_human_avatar.py",
+    "licenseLedger": "docs/3d-assets/3D_ASSET_LICENSE_MANIFEST.json",
+    "maleSourceLicense": "CC0 1.0 Universal; redistribution, modification, and commercial use permitted",
+    "maleSourceUrl": "https://opengameart.org/content/animated-human-low-poly",
+    "maleSourceDownload": "https://opengameart.org/sites/default/files/Animated%20Human%20by%20%40Quaternius_0.zip",
+    "maleSourceConvertedFrom": "Animated Human by @Quaternius/FBX/Animated Human.fbx via FBX2glTF v0.9.7",
+    "maleSourceSha256": "1b8c269da25169f1688066d3e1b3d71844a250032d20b2089bb6489fb54dff48",
+    "maleSourceStatus": "integrated_static_contract_validated_device_visual_review_pending",
+    "femaleSource": "Quaternius Ultimate Animated Character Pack / Casual_Female.fbx (integrated into stable sofia slot)",
+    "femaleSourceLicense": "CC0 1.0 Universal; redistribution, modification, and commercial use permitted",
+    "femaleSourceUrl": "https://opengameart.org/content/animated-characters-pack",
+    "femaleSourceDownload": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+    "femaleSourceConvertedFrom": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual_Female.fbx via FBX2glTF v0.9.7",
+    "femaleSourceSha256": "5120ce57e1eb9db39448717a8c485f70c7d6503b00055512c1909f3bb47894e4",
+    "femaleSourceArchiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+    "femaleSourceStatus": "integrated_static_contract_validated_device_visual_review_pending",
+    "independentFemaleSource": "verified_quaternius_cc0",
+    "femaleSourceAnimationCount": 11,
+    "femaleSourceReview": "OpenGameArt page identifies quaternius as author, CC0 license, and direct no-login ZIP; downloaded Casual_Female FBX inspected and converted with 1 mesh, 1 skin, 11 clips",
+    "licensedSourceCount": 10,
+    "additionalSource": "Quaternius Ultimate Animated Character Pack / eight independently authored FBX characters integrated into maya, amara, elena, nadia, mateo, karim, daniel and isaac",
+    "additionalSourceLicense": "CC0 1.0 Universal; redistribution, modification, and commercial use permitted",
+    "additionalSourceUrl": "https://opengameart.org/content/animated-characters-pack",
+    "additionalSourceDownload": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+    "additionalSourceStatus": "integrated_static_contract_validated_device_visual_review_pending",
+    "additionalSourceAnimation": "CharacterArmature|Idle",
+    "excludedRedistributableAssets": [
+      {
+        "path": "models/renderpeople_sophia.glb",
+        "reason": "removed from Android assets; Renderpeople redistribution terms are not cleared"
+      },
+      {
+        "path": "models/rp_posed_00178_29.glb",
+        "reason": "removed from Android assets; static unrigged candidate and explicitly prohibited"
+      }
+    ],
+    "renderpeoplePolicy": "No Renderpeople GLB is bundled or used as a redistributable Android asset.",
+    "premiumRealisticResearch": "docs/3d-assets/PREMIUM_REALISTIC_SOURCE_RESEARCH.md",
+    "premiumRealisticResearchStatus": "no_source_cleared_for_integration",
+    "premiumRealisticResearchDecision": "Keep all ten Quaternius CC0 low-poly GLBs as safe fallbacks; no realistic candidate passed the combined license, raw-APK redistribution, actual-file, rig/skin/animation, Android and visual-quality gates.",
+    "premiumRealisticResearchDate": "2026-08-11"
+  }
+}

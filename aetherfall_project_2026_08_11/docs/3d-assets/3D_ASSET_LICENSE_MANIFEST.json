@@ -1,0 +1,455 @@
+{
+  "schema": 1,
+  "reviewDate": "2026-08-11",
+  "project": "Empire-of-Kings",
+  "finalStatus": "NOT_COMPLETE_device_and_premium_visual_validation_pending",
+  "scope": "Android GLB inventory and source/license gate; this manifest does not grant redistribution rights.",
+  "statusDefinitions": {
+    "integrated_pending": "The file is preserved in the Android project, but source identity, independent male/female distinction, or redistribution permission is still under review.",
+    "not_cataloged": "The file is present as a candidate or reference but is intentionally not selected by avatar_catalog.json.",
+    "validated_pipeline_only": "The file validates the Android renderer contract but is not the requested premium human cast.",
+    "integrated_static_contract_validated": "A separately authored GLB is integrated with a verified redistribution license and passes static mesh/skin/animation checks; Android device visual playback remains unverified."
+  },
+  "requirementsStillOpen": [
+    "Run all ten integrated GLBs on an Android device or emulator with their neutral animations and lighting.",
+    "Complete premium visual review; the Quaternius models are stylized low-poly and are not evidence of premium realistic quality.",
+    "Confirm that the ten characters are visually distinct enough for the final cast presentation, not merely different names or colors.",
+    "Keep attribution/license records with every production GLB.",
+    "Find and clear a genuinely premium-realistic human source with explicit closed-source Android APK raw-asset redistribution permission, then inspect and hash actual files before integration."
+  ],
+  "assets": [
+    {
+      "id": "xbot_fallback",
+      "path": "app/src/main/assets/models/Xbot.glb",
+      "role": "technical renderer fallback",
+      "status": "validated_pipeline_only",
+      "source": "Three.js example asset already present in the received handoff",
+      "licenseStatus": "review_required_before_commercial_redistribution",
+      "sha256": "002f8d269de68e5dce3d25195caf390d1aa359bbfaae3fcf4c8dc78ec36c3ba5",
+      "androidContract": {
+        "meshCount": 2,
+        "skinCount": 1,
+        "animationNames": [
+          "agree",
+          "headShake",
+          "idle",
+          "run",
+          "sad_pose",
+          "sneak_pose",
+          "walk"
+        ]
+      }
+    },
+    {
+      "id": "quaternius_animated_character_casual_female",
+      "path": "app/src/main/assets/models/avatars/sofia.glb",
+      "role": "integrated female human avatar source in stable sofia slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack (Casual_Female)",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual_Female.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": "CC0 1.0 Universal",
+      "licenseStatus": "verified_redistribution_permitted_commercial_use_permitted",
+      "attribution": "Quaternius (attribution appreciated; not required by CC0)",
+      "sha256": "5120ce57e1eb9db39448717a8c485f70c7d6503b00055512c1909f3bb47894e4",
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationNames": [
+          "CharacterArmature|Defeat",
+          "CharacterArmature|Idle",
+          "CharacterArmature|PickUp",
+          "CharacterArmature|Punch",
+          "CharacterArmature|RecieveHit",
+          "CharacterArmature|Shoot_OneHanded",
+          "CharacterArmature|SitDown",
+          "CharacterArmature|StandUp",
+          "CharacterArmature|Victory",
+          "CharacterArmature|Walk",
+          "CharacterArmature|Walk_Carry"
+        ]
+      },
+      "visualStatus": "female presentation verified from source naming/mesh review; Android device/emulator visual playback and premium visual acceptance pending"
+    },
+    {
+      "id": "quaternius_animated_human_male",
+      "path": "app/src/main/assets/models/avatars/leo.glb",
+      "role": "integrated male human avatar source in stable leo slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Animated Human Low Poly",
+      "sourceUrl": "https://opengameart.org/content/animated-human-low-poly",
+      "downloadUrl": "https://opengameart.org/sites/default/files/Animated%20Human%20by%20%40Quaternius_0.zip",
+      "conversion": "FBX2glTF v0.9.7 from the supplied FBX; no Sophia derivation",
+      "license": "CC0 1.0 Universal",
+      "licenseStatus": "verified_redistribution_permitted",
+      "attribution": "Quaternius (attribution appreciated; not required by CC0)",
+      "sha256": "1b8c269da25169f1688066d3e1b3d71844a250032d20b2089bb6489fb54dff48",
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationNames": [
+          "Human Armature|ArmatureAction.002",
+          "Human Armature|Death",
+          "Human Armature|Idle",
+          "Human Armature|Jump",
+          "Human Armature|Punch",
+          "Human Armature|Run",
+          "Human Armature|Walk",
+          "Human Armature|Working"
+        ]
+      },
+      "visualStatus": "male human preview confirmed; Android device/emulator visual playback pending"
+    },
+    {
+      "id": "quaternius_animated_character_maya",
+      "path": "app/src/main/assets/models/avatars/maya.glb",
+      "role": "integrated female human avatar source in stable maya slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual2_Female.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "8a792529d5c3165d6b8888cc3c119744849a4e365072a3667a1d5e716f4d5de1",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_amara",
+      "path": "app/src/main/assets/models/avatars/amara.glb",
+      "role": "integrated female human avatar source in stable amara slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual3_Female.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "1eaa4c23c761b98b3c5ddfade677ae94710ae0c3d124439f3af0cf9a0042477a",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_elena",
+      "path": "app/src/main/assets/models/avatars/elena.glb",
+      "role": "integrated female human avatar source in stable elena slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Doctor_Female_Young.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "4baeac1372ec42da38e7820df0797cbdcf603702c71a18969dc81d200ab8aa8d",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_nadia",
+      "path": "app/src/main/assets/models/avatars/nadia.glb",
+      "role": "integrated female human avatar source in stable nadia slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/OldClassy_Female.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "7629295e10ae60bf987f4746e47ac1709a5e022049d99c79dbb9c880ede7ddb5",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_mateo",
+      "path": "app/src/main/assets/models/avatars/mateo.glb",
+      "role": "integrated male human avatar source in stable mateo slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual2_Male.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "76ea686bc524c69e8e8e1afa48a9f25873cda1a42b814efc8354da0b5131ffad",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_karim",
+      "path": "app/src/main/assets/models/avatars/karim.glb",
+      "role": "integrated male human avatar source in stable karim slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual3_Male.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "eee6561d920f557b08de352a2ba5fa96a1cfab51af19db9507ff65e85804e630",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_daniel",
+      "path": "app/src/main/assets/models/avatars/daniel.glb",
+      "role": "integrated male human avatar source in stable daniel slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Doctor_Male_Young.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "64149386b82e8c794caa9f44e372cc7dbb2ece9c9c318ab8923e0a1b1d189de6",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    },
+    {
+      "id": "quaternius_animated_character_isaac",
+      "path": "app/src/main/assets/models/avatars/isaac.glb",
+      "role": "integrated male human avatar source in stable isaac slot",
+      "status": "integrated_static_contract_validated",
+      "source": "Quaternius, Ultimate Animated Character Pack",
+      "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/OldClassy_Male.fbx",
+      "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+      "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+      "downloadedWithoutCredentials": true,
+      "archiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+      "glbSha256": "7fa32170a917bda1456d62b1ec628285a3b266b9076e3238e2e78c0f80895b21",
+      "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "status": "verified",
+        "redistribution": "permitted",
+        "commercialUse": "permitted",
+        "attribution": "Quaternius (attribution appreciated; not required by CC0)"
+      },
+      "androidContract": {
+        "meshCount": 1,
+        "skinCount": 1,
+        "animationCount": 11,
+        "neutralAnimation": "CharacterArmature|Idle",
+        "hasJointsWeights": true
+      },
+      "manualGates": [
+        "run CharacterArmature|Idle on an Android device/emulator",
+        "confirm final visual quality is acceptable for the premium cast"
+      ]
+    }
+  ],
+  "catalog": "app/src/main/assets/models/avatar_catalog.json",
+  "importGate": "tools/import_human_avatar.py",
+  "rejectedSources": [
+    {
+      "source": "Renderpeople free animated sample, rp_manuel_animated_001_dancing_FBX.zip",
+      "sourceUrl": "https://renderpeople.com/free-3d-people/",
+      "status": "rejected_for_redistribution",
+      "reason": "Renderpeople terms 4.2(b) prohibit transfer/resale/lending/sublicensing and 4.3(b) prohibit disclosure or making 3D data easily downloadable/extractable; free commercial game rendering does not grant bundling a redistributable individual GLB without written consent.",
+      "termsUrl": "https://renderpeople.com/general-terms-and-conditions/"
+    }
+  ],
+  "tenAvatarSummary": {
+    "independentLicensedSources": 10,
+    "femaleSlots": [
+      "maya",
+      "sofia",
+      "amara",
+      "elena",
+      "nadia"
+    ],
+    "maleSlots": [
+      "leo",
+      "mateo",
+      "karim",
+      "daniel",
+      "isaac"
+    ],
+    "sourceFamily": "Quaternius CC0; Leo from Animated Human Low Poly, remaining nine from Ultimate Animated Character Pack",
+    "sourceDistinctness": "independently authored GLB source per active slot; premium visual acceptance remains pending"
+  },
+  "excludedAssets": [
+    {
+      "path": "app/src/main/assets/models/renderpeople_sophia.glb",
+      "status": "removed_not_bundled",
+      "licenseStatus": "not_cleared",
+      "reason": "Renderpeople redistribution terms do not clear bundling an extractable GLB; no Android asset remains."
+    },
+    {
+      "path": "app/src/main/assets/models/rp_posed_00178_29.glb",
+      "status": "removed_not_bundled",
+      "licenseStatus": "not_cleared",
+      "reason": "Explicitly prohibited candidate; static mesh without skin/animation and no Android asset remains."
+    }
+  ],
+  "premiumRealisticResearch": {
+    "reviewDate": "2026-08-11",
+    "decision": "no_source_cleared_for_integration",
+    "report": "docs/3d-assets/PREMIUM_REALISTIC_SOURCE_RESEARCH.md",
+    "acceptanceContract": [
+      "human presentation visibly more realistic/premium than current Quaternius low-poly cast",
+      "legally downloadable identifiable file",
+      "explicit permission for raw-file redistribution in a closed-source commercial Android APK",
+      "verified mesh skin and animation contract",
+      "actual file available for hash and provenance inspection"
+    ],
+    "sources": [
+      {
+        "name": "MakeHuman / MPFB core assets",
+        "url": "https://static.makehumancommunity.org/about/license.html",
+        "license": "CC0 for core graphics assets; MPFB-generated characters may ship in closed-source games",
+        "fileEvidence": "system asset pack is a 267 MB CC0 pack; official export docs describe FBX and BVH outputs, not a prebuilt GLB cast",
+        "status": "legally_promising_pipeline_not_a_validated_production_artifact"
+      },
+      {
+        "name": "Adobe Mixamo",
+        "url": "https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400",
+        "license": "commercial games permitted, but raw character/animation file distribution prohibited",
+        "status": "rejected_raw_files_cannot_be_redistributed_in_apk"
+      },
+      {
+        "name": "Reallusion CC Character Base",
+        "url": "https://www.reallusion.com/character-creator/free-3d-character-base.html",
+        "license": "publisher advertises commercial use; EULA governs download and accessible text does not grant explicit APK raw-file redistribution",
+        "fileEvidence": "five rigged FBX/OBJ/ZTL bases advertised; account required; no file inspected",
+        "status": "not_cleared_license_and_access_gate"
+      },
+      {
+        "name": "Blender Studio character library",
+        "url": "https://studio.blender.org/characters/",
+        "license": "per-file redistribution license not exposed on inspected public page",
+        "fileEvidence": "fully rigged film characters advertised; no Android-ready realistic human GLB inspected",
+        "status": "not_cleared_file_license_and_quality_gate"
+      }
+    ],
+    "excludedByTask": [
+      "Renderpeople bundling",
+      "Sketchfab extraction",
+      "credential bypass"
+    ],
+    "result": "ten Quaternius CC0 low-poly GLBs remain safe fallbacks; premium visual blocker unresolved; no candidate integrated"
+  }
+}

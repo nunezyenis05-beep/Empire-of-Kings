@@ -1,0 +1,4 @@
+Aetherfall: Empire of Kings — complete project snapshot
+Snapshot date: 2026-08-11
+Source archive: Empire-of-Kings-ci-snapshot-v2.zip
+This folder was added without deleting or overwriting the repository root.

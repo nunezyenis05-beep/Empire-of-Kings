@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "leo",
+  "displayName": "Leo",
+  "genderPresentation": "male",
+  "sourceFile": "Animated Human by @Quaternius/FBX/Animated Human.fbx",
+  "sourceSha256": "1b8c269da25169f1688066d3e1b3d71844a250032d20b2089bb6489fb54dff48",
+  "sourceUrl": "https://opengameart.org/content/animated-human-low-poly",
+  "license": "CC0 1.0 Universal",
+  "licenseStatus": "verified",
+  "attribution": "Quaternius (CC0; attribution appreciated)",
+  "androidContract": {
+    "glbVersion": 2,
+    "meshCount": 1,
+    "skinCount": 1,
+    "animationNames": [
+      "Human Armature|ArmatureAction.002",
+      "Human Armature|Death",
+      "Human Armature|Idle",
+      "Human Armature|Jump",
+      "Human Armature|Punch",
+      "Human Armature|Run",
+      "Human Armature|Walk",
+      "Human Armature|Working"
+    ]
+  },
+  "status": "integrated_static_contract_validated",
+  "manualGates": [
+    "run the neutral Idle clip on an Android device/emulator",
+    "confirm final visual quality is acceptable for the premium cast"
+  ],
+  "downloadUrl": "https://opengameart.org/sites/default/files/Animated%20Human%20by%20%40Quaternius_0.zip",
+  "conversion": "FBX2glTF v0.9.7 --binary --pbr-metallic-roughness --anim-framerate bake30",
+  "visualReview": "Preview confirms a male human; Android device/emulator lighting and animation playback remain unverified in this sandbox."
+}

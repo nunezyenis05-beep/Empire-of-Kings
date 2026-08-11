@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sofia",
+  "displayName": "Sofia",
+  "genderPresentation": "female",
+  "sourceFile": "Ultimate Animated Character Pack - Nov 2019/FBX/Casual_Female.fbx",
+  "sourceSha256": "5120ce57e1eb9db39448717a8c485f70c7d6503b00055512c1909f3bb47894e4",
+  "sourceUrl": "https://opengameart.org/content/animated-characters-pack",
+  "license": "CC0 1.0 Universal",
+  "licenseStatus": "verified",
+  "attribution": "Quaternius (attribution appreciated; not required by CC0)",
+  "androidContract": {
+    "glbVersion": 2,
+    "meshCount": 1,
+    "skinCount": 1,
+    "animationNames": [
+      "CharacterArmature|Defeat",
+      "CharacterArmature|Idle",
+      "CharacterArmature|PickUp",
+      "CharacterArmature|Punch",
+      "CharacterArmature|RecieveHit",
+      "CharacterArmature|Shoot_OneHanded",
+      "CharacterArmature|SitDown",
+      "CharacterArmature|StandUp",
+      "CharacterArmature|Victory",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Walk_Carry"
+    ]
+  },
+  "status": "integrated_static_contract_validated",
+  "manualGates": [
+    "run CharacterArmature|Idle on an Android device/emulator",
+    "confirm final visual quality is acceptable for the premium cast"
+  ],
+  "downloadUrl": "https://opengameart.org/sites/default/files/ultimate_animated_character_pack_by_quaternius.zip",
+  "sourceArchiveSha256": "0295062cbc72da52ee804f39ac38694901a40458011f9b2638fc7ef13ed509da",
+  "conversion": "FBX2glTF v0.9.7 --binary --compute-normals missing --anim-framerate bake30",
+  "visualReview": "Female presentation confirmed from the independently authored Casual_Female source; Android device/emulator lighting and animation playback remain unverified."
+}
