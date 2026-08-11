@@ -5,19 +5,1019 @@
     "model_ready_license_review": "Hay un GLB, pero falta cerrar el registro de licencia específico."
   },
   "entries": [
-    {"id":"outfit_royal","slot":"Atuendo","name":"Atuendo del Trono","model":null,"status":"model_pending"},
-    {"id":"outfit_night","slot":"Atuendo","name":"Guardia Nocturna","model":null,"status":"model_pending"},
-    {"id":"armor_azur","slot":"Armadura","name":"Coraza de Fuego Azur","model":null,"status":"model_pending"},
-    {"id":"cape_crown","slot":"Capa","name":"Capa de la Corona","model":null,"status":"model_pending"},
-    {"id":"cape_shadow","slot":"Capa","name":"Capa de Sombra","model":null,"status":"model_pending"},
-    {"id":"crown_iron","slot":"Corona","name":"Diadema de Hierro","model":null,"status":"model_pending"},
-    {"id":"amulet_sun","slot":"Accesorio","name":"Amuleto Solar","model":null,"status":"model_pending"},
-    {"id":"wpn_corona_king","slot":"Arma","name":"Corona del Rey","model":null,"status":"model_pending"},
-    {"id":"wpn_juicio_dorado","slot":"Arma","name":"Juicio Dorado","model":null,"status":"model_pending"},
-    {"id":"wpn_escopeta_abismo","slot":"Arma","name":"Escopeta del Abismo","model":null,"status":"model_pending"},
-    {"id":"wpn_tormenta_cristal","slot":"Arma","name":"Tormenta de Cristal","model":null,"status":"model_pending"},
-    {"id":"wpn_ojo_leon","slot":"Arma","name":"Ojo de León","model":null,"status":"model_pending"},
-    {"id":"wpn_baston_flama_azul","slot":"Arma","name":"Bastón Flama Azul","model":null,"status":"model_pending"},
-    {"id":"wpn_espada_mística","slot":"Arma","name":"Mandoble Imperial de León","model":null,"status":"model_pending"}
-  ]
+    {
+      "id": "outfit_royal",
+      "slot": "Atuendo",
+      "name": "Atuendo del Trono",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "outfit_night",
+      "slot": "Atuendo",
+      "name": "Guardia Nocturna",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "armor_azur",
+      "slot": "Armadura",
+      "name": "Coraza de Fuego Azur",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "cape_crown",
+      "slot": "Capa",
+      "name": "Capa de la Corona",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "cape_shadow",
+      "slot": "Capa",
+      "name": "Capa de Sombra",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "crown_iron",
+      "slot": "Corona",
+      "name": "Diadema de Hierro",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "amulet_sun",
+      "slot": "Accesorio",
+      "name": "Amuleto Solar",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_corona_king",
+      "slot": "Arma",
+      "name": "Corona del Rey",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_juicio_dorado",
+      "slot": "Arma",
+      "name": "Juicio Dorado",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_escopeta_abismo",
+      "slot": "Arma",
+      "name": "Escopeta del Abismo",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_tormenta_cristal",
+      "slot": "Arma",
+      "name": "Tormenta de Cristal",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_ojo_leon",
+      "slot": "Arma",
+      "name": "Ojo de León",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_baston_flama_azul",
+      "slot": "Arma",
+      "name": "Bastón Flama Azul",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "wpn_espada_mística",
+      "slot": "Arma",
+      "name": "Mandoble Imperial de León",
+      "model": null,
+      "status": "model_pending"
+    },
+    {
+      "id": "m_tops_01",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_02",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Místico",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_03",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_04",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_05",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_06",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_07",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_08",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_09",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_10",
+      "slot": "Pulóver/top",
+      "name": "Pulóver Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_11",
+      "slot": "Pulóver/top",
+      "name": "Top Dragón Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_12",
+      "slot": "Pulóver/top",
+      "name": "Top Dragón de Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_13",
+      "slot": "Pulóver/top",
+      "name": "Top Guardián Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_14",
+      "slot": "Pulóver/top",
+      "name": "Top Príncipe Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_15",
+      "slot": "Pulóver/top",
+      "name": "Top Caballero Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_16",
+      "slot": "Pulóver/top",
+      "name": "Top Eclipse Real",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_17",
+      "slot": "Pulóver/top",
+      "name": "Top Sombra Nocturna",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_18",
+      "slot": "Pulóver/top",
+      "name": "Top Fuego del Trono",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_19",
+      "slot": "Pulóver/top",
+      "name": "Top Tormenta Regia",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_tops_20",
+      "slot": "Pulóver/top",
+      "name": "Top Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_01",
+      "slot": "Pantalón",
+      "name": "Pantalón Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_02",
+      "slot": "Pantalón",
+      "name": "Pantalón Místico",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_03",
+      "slot": "Pantalón",
+      "name": "Pantalón Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_04",
+      "slot": "Pantalón",
+      "name": "Pantalón Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_05",
+      "slot": "Pantalón",
+      "name": "Pantalón Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_06",
+      "slot": "Pantalón",
+      "name": "Pantalón Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_07",
+      "slot": "Pantalón",
+      "name": "Pantalón Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_08",
+      "slot": "Pantalón",
+      "name": "Pantalón Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_09",
+      "slot": "Pantalón",
+      "name": "Pantalón Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_10",
+      "slot": "Pantalón",
+      "name": "Pantalón Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_11",
+      "slot": "Pantalón",
+      "name": "Pantalón Ripped Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_12",
+      "slot": "Pantalón",
+      "name": "Pantalón Ripped de Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_13",
+      "slot": "Pantalón",
+      "name": "Pantalón Dragón Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_14",
+      "slot": "Pantalón",
+      "name": "Pantalón Arcano Nocturno",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_15",
+      "slot": "Pantalón",
+      "name": "Pantalón Celestial Real",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_16",
+      "slot": "Pantalón",
+      "name": "Pantalón Eclipse Negro",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_17",
+      "slot": "Pantalón",
+      "name": "Pantalón Sombra del Trono",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_18",
+      "slot": "Pantalón",
+      "name": "Pantalón Fuego Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_19",
+      "slot": "Pantalón",
+      "name": "Pantalón Tormenta Azul",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_pants_20",
+      "slot": "Pantalón",
+      "name": "Pantalón Obsidiana Real",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_01",
+      "slot": "Short",
+      "name": "Short Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_02",
+      "slot": "Short",
+      "name": "Short Místico",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_03",
+      "slot": "Short",
+      "name": "Short Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_04",
+      "slot": "Short",
+      "name": "Short Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_05",
+      "slot": "Short",
+      "name": "Short Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_06",
+      "slot": "Short",
+      "name": "Short Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_07",
+      "slot": "Short",
+      "name": "Short Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_08",
+      "slot": "Short",
+      "name": "Short Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_09",
+      "slot": "Short",
+      "name": "Short Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_10",
+      "slot": "Short",
+      "name": "Short Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_11",
+      "slot": "Short",
+      "name": "Short Ripped Carmesí",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_12",
+      "slot": "Short",
+      "name": "Short Ripped de Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_13",
+      "slot": "Short",
+      "name": "Short Dragón",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_14",
+      "slot": "Short",
+      "name": "Short Eclipse Real",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_shorts_15",
+      "slot": "Short",
+      "name": "Short del Guardián",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_01",
+      "slot": "Culotte",
+      "name": "Culotte Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_02",
+      "slot": "Culotte",
+      "name": "Culotte Místico",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_03",
+      "slot": "Culotte",
+      "name": "Culotte Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_04",
+      "slot": "Culotte",
+      "name": "Culotte Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_05",
+      "slot": "Culotte",
+      "name": "Culotte Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_06",
+      "slot": "Culotte",
+      "name": "Culotte Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_07",
+      "slot": "Culotte",
+      "name": "Culotte Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_08",
+      "slot": "Culotte",
+      "name": "Culotte Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_09",
+      "slot": "Culotte",
+      "name": "Culotte Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_culottes_10",
+      "slot": "Culotte",
+      "name": "Culotte Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_01",
+      "slot": "Conjunto",
+      "name": "Conjunto Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_02",
+      "slot": "Conjunto",
+      "name": "Conjunto Místico",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_03",
+      "slot": "Conjunto",
+      "name": "Conjunto Arcano",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_04",
+      "slot": "Conjunto",
+      "name": "Conjunto Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_05",
+      "slot": "Conjunto",
+      "name": "Conjunto Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_06",
+      "slot": "Conjunto",
+      "name": "Conjunto Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_07",
+      "slot": "Conjunto",
+      "name": "Conjunto Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_08",
+      "slot": "Conjunto",
+      "name": "Conjunto Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_09",
+      "slot": "Conjunto",
+      "name": "Conjunto Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_sets_10",
+      "slot": "Conjunto",
+      "name": "Conjunto Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_01",
+      "slot": "Armadura",
+      "name": "Armadura Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_02",
+      "slot": "Armadura",
+      "name": "Armadura Mística",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_03",
+      "slot": "Armadura",
+      "name": "Armadura Arcana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_04",
+      "slot": "Armadura",
+      "name": "Armadura Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_05",
+      "slot": "Armadura",
+      "name": "Armadura Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_06",
+      "slot": "Armadura",
+      "name": "Armadura Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_07",
+      "slot": "Armadura",
+      "name": "Armadura Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_08",
+      "slot": "Armadura",
+      "name": "Armadura Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_09",
+      "slot": "Armadura",
+      "name": "Armadura Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_armor_10",
+      "slot": "Armadura",
+      "name": "Armadura Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_capes_01",
+      "slot": "Capa",
+      "name": "Capa Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_capes_02",
+      "slot": "Capa",
+      "name": "Capa Arcana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_capes_03",
+      "slot": "Capa",
+      "name": "Capa Celestial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_capes_04",
+      "slot": "Capa",
+      "name": "Capa Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_capes_05",
+      "slot": "Capa",
+      "name": "Capa Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_01",
+      "slot": "Accesorio",
+      "name": "Brazalete Dragón",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_02",
+      "slot": "Accesorio",
+      "name": "Cinturón Imperial",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_03",
+      "slot": "Accesorio",
+      "name": "Guantes Arcanos",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_04",
+      "slot": "Accesorio",
+      "name": "Hombreras Celestiales",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_05",
+      "slot": "Accesorio",
+      "name": "Faja de Eclipse",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_06",
+      "slot": "Accesorio",
+      "name": "Collar de Sombra",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_07",
+      "slot": "Accesorio",
+      "name": "Broche de Fuego",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_08",
+      "slot": "Accesorio",
+      "name": "Bufanda de Hielo",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_09",
+      "slot": "Accesorio",
+      "name": "Lentes de Tormenta",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    },
+    {
+      "id": "m_accessories_10",
+      "slot": "Accesorio",
+      "name": "Medallón Obsidiana",
+      "model": null,
+      "status": "model_pending",
+      "gender": "male",
+      "collection": "BLOQUE_001_INVENTARIO_MASCULINO"
+    }
+  ],
+  "block001": {
+    "status": "inventory_registered_model_pending",
+    "gender": "male",
+    "counts": {
+      "tops": 20,
+      "pants": 20,
+      "shorts": 15,
+      "culottes": 10,
+      "sets": 10,
+      "armor": 10,
+      "capes": 5,
+      "accessories": 10
+    },
+    "total": 100,
+    "rule": "No entry may be marked ready until a separate licensed GLB exists and passes Android validation."
+  }
 }
