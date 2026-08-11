@@ -1,4 +1,4 @@
-name: Build Aetherfall APK from validated snapshot
+name: Build Aetherfall APK from validated project
 
 on:
   workflow_dispatch:
@@ -12,17 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Download validated project snapshot
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate project directory
         run: |
-          curl -L --fail --retry 3 'https://share.zapia.com/credy2pujmpqoikrxeij8l' -o /tmp/empire-of-kings.zip
-          mkdir -p project
-          unzip -q /tmp/empire-of-kings.zip -d project
-          test -f project/Empire-of-Kings/gradlew
-          chmod +x project/Empire-of-Kings/gradlew
-          # AGP 9 rejects KSP's generated Kotlin source directories unless this
-          # compatibility flag is present in the validated snapshot.
-          grep -qxF 'android.disallowKotlinSourceSets=false' project/Empire-of-Kings/gradle.properties || \
-            printf '\nandroid.disallowKotlinSourceSets=false\n' >> project/Empire-of-Kings/gradle.properties
+          test -f aetherfall_project_2026_08_11/gradlew
+          test -f aetherfall_project_2026_08_11/gradle.properties
+          chmod +x aetherfall_project_2026_08_11/gradlew
 
       - name: Set up Java 17
         uses: actions/setup-java@v4
@@ -37,14 +34,14 @@ jobs:
         run: yes | sdkmanager --licenses >/dev/null || true
 
       - name: Build and test
-        working-directory: project/Empire-of-Kings
+        working-directory: aetherfall_project_2026_08_11
         run: ./gradlew test assembleDebug --no-daemon --stacktrace --console=plain
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: aetherfall-debug-apk
-          path: project/Empire-of-Kings/app/build/outputs/apk/debug/*.apk
+          path: aetherfall_project_2026_08_11/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
           retention-days: 14
 
@@ -54,7 +51,7 @@ jobs:
         with:
           name: aetherfall-test-reports
           path: |
-            project/Empire-of-Kings/app/build/reports/**
-            project/Empire-of-Kings/app/build/test-results/**
+            aetherfall_project_2026_08_11/app/build/reports/**
+            aetherfall_project_2026_08_11/app/build/test-results/**
           if-no-files-found: ignore
           retention-days: 14
