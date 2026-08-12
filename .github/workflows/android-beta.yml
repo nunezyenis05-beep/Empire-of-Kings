@@ -33,9 +33,11 @@ jobs:
 
       - name: Restore 3D test assets
         run: |
-          mkdir -p app/src/main/assets/models/avatars
+          mkdir -p app/src/main/assets/models/avatars gradle/wrapper
           curl -L --fail 'https://share.zapia.com/9fv5m1jirz5i431ict5o84' -o app/src/main/assets/models/avatars/maya.glb
           curl -L --fail 'https://share.zapia.com/ku8jwqxzj19jcj419lsy5z' -o app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
+          curl -L --fail 'https://share.zapia.com/adwytqoynrhlcnkusode09' -o gradle/wrapper/gradle-wrapper.jar
+          curl -L --fail 'https://share.zapia.com/n9w3oxms4rws0lvoe0mbny' -o gradle/wrapper/gradle-wrapper.properties
 
       - name: Build and test
         run: |
