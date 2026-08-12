@@ -23,10 +23,10 @@ import com.aistudio.empireofkings.game.data.UserAccount
 import com.aistudio.empireofkings.game.ui.ScreenRoute
 import com.aistudio.empireofkings.game.ui.components.BottomNavBar
 import com.aistudio.empireofkings.game.ui.components.Mystic3DBackground
-import com.aistudio.empireofkings.game.ui.components.ReferenceBadge
 import com.aistudio.empireofkings.game.ui.components.ReferencePanel
 import com.aistudio.empireofkings.game.ui.components.ReferenceTitle
 import com.aistudio.empireofkings.game.ui.components.TopBar
+import com.aistudio.empireofkings.game.ui.components.WeaponGallerySection
 import com.aistudio.empireofkings.game.ui.theme.*
 
 @Composable
@@ -101,6 +101,9 @@ fun InventoryScreen(
                 Spacer(modifier = Modifier.height(5.dp))
                 Text("${visibleItems.size} objetos en ${selectedType.lowercase()}", color = TextMuted, fontSize = 10.sp)
                 Spacer(modifier = Modifier.height(6.dp))
+
+                WeaponGallerySection(modifier = Modifier.fillMaxWidth())
+                Spacer(modifier = Modifier.height(8.dp))
 
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(minSize = 142.dp),
