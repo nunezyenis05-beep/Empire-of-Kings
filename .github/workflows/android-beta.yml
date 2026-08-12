@@ -38,6 +38,10 @@ jobs:
           curl -L --fail 'https://share.zapia.com/ku8jwqxzj19jcj419lsy5z' -o app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
           curl -L --fail 'https://share.zapia.com/adwytqoynrhlcnkusode09' -o gradle/wrapper/gradle-wrapper.jar
           curl -L --fail 'https://share.zapia.com/n9w3oxms4rws0lvoe0mbny' -o gradle/wrapper/gradle-wrapper.properties
+          curl -L --fail 'https://share.zapia.com/ayynzvs7m8nf3xv4cf7u9d' -o gradle/wrapper/gradle-cli.jar
+          curl -L --fail 'https://share.zapia.com/hpj1laz1zutzeajhq5dpi7' -o gradle/wrapper/gradle-files.jar
+          curl -L --fail 'https://share.zapia.com/f5uoxwizwiuriiuafxci8t' -o gradle/wrapper/gradle-stdlib-java-extensions.jar
+          curl -L --fail 'https://share.zapia.com/y02vzjvif4j2n7pmo8zvh7' -o gradle/wrapper/gradle-wrapper-shared.jar
 
       - name: Build and test
         run: |
