@@ -1,4 +1,18 @@
 import com.google.gms.googleservices.GoogleServicesPlugin.MissingGoogleServicesStrategy
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
+// Release signing is supplied only by the build environment; no keystore or password
+// is committed to the repository. Without these values release remains unsigned.
+val releaseStoreFilePath = System.getenv("EMPIRE_RELEASE_STORE_FILE")
+val releaseStorePassword = System.getenv("EMPIRE_RELEASE_STORE_PASSWORD")
+val releaseKeyAlias = System.getenv("EMPIRE_RELEASE_KEY_ALIAS")
+val releaseKeyPassword = System.getenv("EMPIRE_RELEASE_KEY_PASSWORD")
+val hasReleaseSigning = listOf(
+  releaseStoreFilePath,
+  releaseStorePassword,
+  releaseKeyAlias,
+  releaseKeyPassword
+).all { !it.isNullOrBlank() }
 
 plugins {
   alias(libs.plugins.android.application)
@@ -10,8 +24,11 @@ plugins {
 }
 
 android {
-  namespace = "com.example"
-  compileSdk { version = release(36) { minorApiLevel = 1 } }
+  namespace = "com.aistudio.empireofkings.game"
+  // Keep the compile target aligned with the Android SDK Platform 36 archive used by
+  // the reproducible build script. Requesting minor API 36.1 would fail on a clean
+  // launch machine that only has platform-36 installed.
+  compileSdk = 36
 
   defaultConfig {
     applicationId = "com.aistudio.empireofkings.game"
@@ -24,29 +41,25 @@ android {
   }
 
   signingConfigs {
-    create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
-      storeFile = file(keystorePath)
-      storePassword = System.getenv("STORE_PASSWORD")
-      keyAlias = "upload"
-      keyPassword = System.getenv("KEY_PASSWORD")
-    }
-    create("debugConfig") {
-      storeFile = file("${rootDir}/debug.keystore")
-      storePassword = "android"
-      keyAlias = "androiddebugkey"
-      keyPassword = "android"
+    if (hasReleaseSigning) {
+      create("release") {
+        storeFile = file(releaseStoreFilePath!!)
+        storePassword = releaseStorePassword
+        keyAlias = releaseKeyAlias
+        keyPassword = releaseKeyPassword
+      }
     }
   }
-
   buildTypes {
     release {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-      signingConfig = signingConfigs.getByName("release")
+      if (hasReleaseSigning) {
+        signingConfig = signingConfigs.getByName("release")
+      }
     }
-    debug { signingConfig = signingConfigs.getByName("debugConfig") }
+    // Debug uses the Android Gradle Plugin's standard debug keystore.
   }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_11
@@ -60,6 +73,14 @@ android {
   dependenciesInfo {
     includeInApk = false
     includeInBundle = true
+  }
+}
+
+// Keep Kotlin bytecode aligned with the Java 11 compile target. The build itself
+// runs on JDK 17, as required by Gradle 9 and AGP 9.
+kotlin {
+  compilerOptions {
+    jvmTarget = JvmTarget.JVM_11
   }
 }
 
@@ -116,6 +137,9 @@ dependencies {
   implementation(libs.logging.interceptor)
   implementation(libs.moshi.kotlin)
   implementation(libs.okhttp)
+  implementation(libs.socket.io.client)
+  // Native Filament renderer for the bundled animated GLB avatar.
+  implementation(libs.sceneview)
   // implementation(libs.play.services.location)
   implementation(libs.retrofit)
   testImplementation(libs.androidx.compose.ui.test.junit4)
