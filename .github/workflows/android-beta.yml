@@ -38,7 +38,9 @@ jobs:
           curl -L --fail 'https://share.zapia.com/ku8jwqxzj19jcj419lsy5z' -o app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
 
       - name: Build and test
-        run: ./gradlew test assembleDebug --no-daemon --stacktrace --console=plain
+        run: |
+          chmod +x gradlew
+          ./gradlew test assembleDebug --no-daemon --stacktrace --console=plain
 
       - name: Upload verified beta APK
         uses: actions/upload-artifact@v4
