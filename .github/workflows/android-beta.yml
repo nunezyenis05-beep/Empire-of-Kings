@@ -31,6 +31,12 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: Restore 3D test assets
+        run: |
+          mkdir -p app/src/main/assets/models/avatars
+          curl -L --fail 'https://share.zapia.com/9fv5m1jirz5i431ict5o84' -o app/src/main/assets/models/avatars/maya.glb
+          curl -L --fail 'https://share.zapia.com/ku8jwqxzj19jcj419lsy5z' -o app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
+
       - name: Build and test
         run: ./gradlew test assembleDebug --no-daemon --stacktrace --console=plain
 
