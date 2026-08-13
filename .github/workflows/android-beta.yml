@@ -24,6 +24,7 @@ jobs:
       - name: Sync verified local project snapshot
         run: |
           curl -L --fail 'https://share.zapia.com/b4qws7tdy4z0l55yrq2rxm' -o project_snapshot.zip
+          rm -rf app gradle gradle.properties build.gradle.kts settings.gradle.kts gradlew gradlew.bat
           unzip -oq project_snapshot.zip -d .
 
       - name: Set up Java
