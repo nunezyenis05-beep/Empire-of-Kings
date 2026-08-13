@@ -23,7 +23,7 @@ jobs:
 
       - name: Sync verified local project snapshot
         run: |
-          curl -L --fail 'https://share.zapia.com/c6kr3ht4u4dv29ydynqlbt' -o project_snapshot.zip
+          curl -L --fail 'https://share.zapia.com/rsah7peo679gaw4v4kfc0n' -o project_snapshot.zip
           unzip -oq project_snapshot.zip -d .
 
       - name: Set up Java
