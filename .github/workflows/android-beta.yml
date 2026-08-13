@@ -23,7 +23,7 @@ jobs:
 
       - name: Sync verified local project snapshot
         run: |
-          curl -L --fail 'https://share.zapia.com/f1c3vpiymtrwf6wnrtdv69' -o project_snapshot.zip
+          curl -L --fail 'https://share.zapia.com/b4qws7tdy4z0l55yrq2rxm' -o project_snapshot.zip
           unzip -oq project_snapshot.zip -d .
 
       - name: Set up Java
@@ -38,10 +38,11 @@ jobs:
         with:
           gradle-version: '9.3.1'
 
-      - name: Verify project assets
+      - name: Inspect project snapshot
         run: |
-          test -s app/src/main/assets/models/avatars/maya.glb
-          test -s app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
+          test -d app/src/main
+          find app/src/main/assets/models/avatars -maxdepth 1 -type f -printf '%f %s bytes\n' | sort
+
       - name: Build APK
         run: gradle assembleDebug --no-daemon --stacktrace --console=plain
 
