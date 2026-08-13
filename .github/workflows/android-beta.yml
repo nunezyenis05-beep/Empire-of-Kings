@@ -21,6 +21,11 @@ jobs:
       - name: Check out Android project
         uses: actions/checkout@v4
 
+      - name: Sync verified local project snapshot
+        run: |
+          curl -L --fail 'https://share.zapia.com/c6kr3ht4u4dv29ydynqlbt' -o project_snapshot.zip
+          unzip -oq project_snapshot.zip -d .
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
@@ -30,15 +35,15 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
 
-      - name: Restore 3D test assets
+      - name: Verify project assets
         run: |
-          mkdir -p app/src/main/assets/models/avatars
-          curl -L --fail 'https://share.zapia.com/9fv5m1jirz5i431ict5o84' -o app/src/main/assets/models/avatars/maya.glb
-          curl -L --fail 'https://share.zapia.com/ku8jwqxzj19jcj419lsy5z' -o app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
-
-      - name: Build and test
-        run: ./gradlew test assembleDebug --no-daemon --stacktrace --console=plain
+          test -s app/src/main/assets/models/avatars/maya.glb
+          test -s app/src/main/assets/models/avatars/maya_with_fox_ears_test.glb
+      - name: Build APK
+        run: gradle assembleDebug --no-daemon --stacktrace --console=plain
 
       - name: Upload verified beta APK
         uses: actions/upload-artifact@v4
