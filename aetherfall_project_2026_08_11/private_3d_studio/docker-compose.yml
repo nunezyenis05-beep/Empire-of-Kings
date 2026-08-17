@@ -1,0 +1,28 @@
+services:
+  studio:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      STUDIO_ADMIN_TOKEN: ${STUDIO_ADMIN_TOKEN:?Set a strong private token}
+      STUDIO_DATA: /studio/data
+      HF_HOME: /studio/hf_cache
+      HUGGINGFACE_HUB_CACHE: /studio/hf_cache
+      ATTN_BACKEND: xformers
+      SPCONV_ALGO: native
+      PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+    volumes:
+      - studio_data:/studio/data
+      - hf_cache:/studio/hf_cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  studio_data:
+  hf_cache:
