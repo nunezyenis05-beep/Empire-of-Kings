@@ -9,7 +9,11 @@ DB=ROOT/'studio.db'; ADMIN=os.getenv('STUDIO_ADMIN_TOKEN','change-me')
 app=FastAPI(title='Empire of Kings Private 3D Studio')
 
 def db():
- c=sqlite3.connect(DB); c.row_factory=sqlite3.Row; c.execute('CREATE TABLE IF NOT EXISTS assets(id TEXT PRIMARY KEY,name TEXT,category TEXT,status TEXT,error TEXT,folder TEXT,created_at TEXT DEFAULT CURRENT_TIMESTAMP)'); c.commit(); return c
+ c=sqlite3.connect(DB); c.row_factory=sqlite3.Row
+ c.execute('CREATE TABLE IF NOT EXISTS assets(id TEXT PRIMARY KEY,name TEXT,category TEXT,status TEXT,error TEXT,folder TEXT,mode TEXT,created_at TEXT DEFAULT CURRENT_TIMESTAMP)')
+ cols={r[1] for r in c.execute('PRAGMA table_info(assets)')}
+ if 'mode' not in cols: c.execute("ALTER TABLE assets ADD COLUMN mode TEXT DEFAULT 'multi-view'")
+ c.commit(); return c
 
 def auth(authorization: str|None):
  if authorization!=f'Bearer {ADMIN}': raise HTTPException(401,'Private access required')
@@ -20,7 +24,7 @@ def asset_row(i):
  return dict(r)
 
 @app.get('/api/health')
-def health(): return {'ok':True,'service':'private-3d-studio'}
+def health(): return {'ok':True,'service':'private-3d-studio','single_image_ai':bool(os.getenv('TRELLIS2_ROOT'))}
 
 @app.get('/api/assets')
 def assets(authorization: str|None=Header(default=None)):
@@ -48,44 +52,58 @@ def glb(asset_id:str,authorization: str|None=Header(default=None)):
 @app.post('/api/assets')
 async def create_asset(name:str=Form(...),category:str=Form('Other'),images:list[UploadFile]=File(...),authorization:str|None=Header(default=None)):
  auth(authorization)
- if len(images)<2 or len(images)>20: raise HTTPException(400,'Upload between 2 and 20 images')
+ if len(images)<1 or len(images)>20: raise HTTPException(400,'Upload between 1 and 20 images')
+ mode='single-image-ai' if len(images)==1 else 'multi-view'
+ if mode=='single-image-ai' and not os.getenv('TRELLIS2_ROOT'): raise HTTPException(503,'Single-image AI engine is not installed on this private server yet')
  aid='EOK3D-'+uuid.uuid4().hex[:10].upper(); folder=ROOT/'assets'/aid; src=folder/'images'; src.mkdir(parents=True)
  for n,img in enumerate(images,1):
   if not (img.content_type or '').startswith('image/'): raise HTTPException(400,'All inputs must be images')
   with (src/f'{n:02d}-{Path(img.filename or "image").name}').open('wb') as out: shutil.copyfileobj(img.file,out)
  first=Image.open(next(src.iterdir())).convert('RGB'); first.thumbnail((800,800)); first.save(folder/'thumbnail.jpg',quality=82)
- c=db(); c.execute('INSERT INTO assets(id,name,category,status,folder) VALUES(?,?,?,?,?)',(aid,name,category,'queued',str(folder))); c.commit(); c.close()
- threading.Thread(target=reconstruct,args=(aid,),daemon=True).start(); return {'id':aid,'name':name,'status':'queued'}
+ c=db(); c.execute('INSERT INTO assets(id,name,category,status,folder,mode) VALUES(?,?,?,?,?,?)',(aid,name,category,'queued',str(folder),mode)); c.commit(); c.close()
+ threading.Thread(target=process_asset,args=(aid,),daemon=True).start(); return {'id':aid,'name':name,'status':'queued','mode':mode}
 
 def run(cmd,cwd,log):
  with open(log,'a') as f: return subprocess.run(cmd,cwd=cwd,stdout=f,stderr=subprocess.STDOUT,text=True).returncode
 
-def reconstruct(aid):
- r=asset_row(aid); folder=Path(r['folder']); src=folder/'images'; dbx=folder/'colmap.db'; sparse=folder/'sparse'; dense=folder/'dense'; log=folder/'process.log'
- c=db(); c.execute('UPDATE assets SET status=? WHERE id=?',('processing',aid)); c.commit(); c.close()
+def process_asset(aid):
+ r=asset_row(aid); folder=Path(r['folder']); c=db(); c.execute('UPDATE assets SET status=? WHERE id=?',('processing',aid)); c.commit(); c.close()
  try:
-  cmds=[
-   ['colmap','feature_extractor','--database_path',str(dbx),'--image_path',str(src),'--ImageReader.single_camera','1'],
-   ['colmap','exhaustive_matcher','--database_path',str(dbx)],
-   ['colmap','mapper','--database_path',str(dbx),'--image_path',str(src),'--output_path',str(sparse)],
-  ]
-  for cmd in cmds:
-   if run(cmd,folder,log)!=0: raise RuntimeError(f'COLMAP failed: {cmd[1]}')
-  models=list(sparse.glob('*/images.bin'))
-  if not models: raise RuntimeError('No camera reconstruction was produced. Use more overlapping views.')
-  model=models[0].parent
-  if run(['colmap','image_undistorter','--image_path',str(src),'--input_path',str(model),'--output_path',str(dense),'--output_type','COLMAP','--max_image_size','2000'],folder,log)!=0: raise RuntimeError('Undistortion failed')
-  if run(['colmap','patch_match_stereo','--workspace_path',str(dense),'--workspace_format','COLMAP','--PatchMatchStereo.geom_consistency','true'],folder,log)!=0: raise RuntimeError('Dense stereo failed')
-  fused=dense/'fused.ply'
-  if run(['colmap','stereo_fusion','--workspace_path',str(dense),'--workspace_format','COLMAP','--input_type','geometric','--output_path',str(fused)],folder,log)!=0: raise RuntimeError('Stereo fusion failed')
-  mesh=dense/'meshed-poisson.ply'
-  if run(['colmap','poisson_mesher','--input_path',str(fused),'--output_path',str(mesh)],folder,log)!=0: raise RuntimeError('Meshing failed')
-  textured=dense/'textured'
-  if run(['colmap','mesh_texturer','--workspace_path',str(dense),'--input_path',str(mesh),'--output_path',str(textured)],folder,log)!=0: raise RuntimeError('Texture baking failed')
-  textured_mesh=textured/'mesh.ply'; texture=textured/'texture.png'
-  if not textured_mesh.exists() or not texture.exists(): raise RuntimeError('Textured mesh or texture atlas was not produced')
-  import trimesh
-  scene=trimesh.load(textured_mesh,force='scene'); scene.export(folder/'model.glb',file_type='glb'); shutil.copy2(texture,folder/'texture.png')
+  if r['mode']=='single-image-ai': run_single_image(r,folder)
+  else: run_multiview(r,folder)
   c=db(); c.execute('UPDATE assets SET status=?,error=NULL WHERE id=?',('ready',aid)); c.commit(); c.close()
  except Exception as e:
   c=db(); c.execute('UPDATE assets SET status=?,error=? WHERE id=?',('error',str(e),aid)); c.commit(); c.close()
+
+def run_single_image(r,folder):
+ runner=Path(os.getenv('TRELLIS2_ROOT'))/'studio_runner.py'
+ if not runner.exists(): raise RuntimeError('TRELLIS2_ROOT is set but studio_runner.py is missing')
+ image=next((folder/'images').iterdir())
+ cmd=['python',str(runner),str(image),str(folder/'model.glb'),os.getenv('TRELLIS2_RESOLUTION','1024'),os.getenv('TRELLIS2_FACES','500000'),os.getenv('TRELLIS2_TEXTURE','2048')]
+ if run(cmd,folder,folder/'process.log')!=0: raise RuntimeError('TRELLIS.2 generation failed; inspect process.log')
+
+# Multi-view fallback: real photogrammetry for 2–20 source views.
+def run_multiview(r,folder):
+ src=folder/'images'; dbx=folder/'colmap.db'; sparse=folder/'sparse'; dense=folder/'dense'; log=folder/'process.log'
+ cmds=[
+  ['colmap','feature_extractor','--database_path',str(dbx),'--image_path',str(src),'--ImageReader.single_camera','1'],
+  ['colmap','exhaustive_matcher','--database_path',str(dbx)],
+  ['colmap','mapper','--database_path',str(dbx),'--image_path',str(src),'--output_path',str(sparse)],
+ ]
+ for cmd in cmds:
+  if run(cmd,folder,log)!=0: raise RuntimeError(f'COLMAP failed: {cmd[1]}')
+ models=list(sparse.glob('*/images.bin'))
+ if not models: raise RuntimeError('No camera reconstruction was produced. Use overlapping views of the same object.')
+ model=models[0].parent
+ if run(['colmap','image_undistorter','--image_path',str(src),'--input_path',str(model),'--output_path',str(dense),'--output_type','COLMAP','--max_image_size','2000'],folder,log)!=0: raise RuntimeError('Undistortion failed')
+ if run(['colmap','patch_match_stereo','--workspace_path',str(dense),'--workspace_format','COLMAP','--PatchMatchStereo.geom_consistency','true'],folder,log)!=0: raise RuntimeError('Dense stereo failed')
+ fused=dense/'fused.ply'
+ if run(['colmap','stereo_fusion','--workspace_path',str(dense),'--workspace_format','COLMAP','--input_type','geometric','--output_path',str(fused)],folder,log)!=0: raise RuntimeError('Stereo fusion failed')
+ mesh=dense/'meshed-poisson.ply'
+ if run(['colmap','poisson_mesher','--input_path',str(fused),'--output_path',str(mesh)],folder,log)!=0: raise RuntimeError('Meshing failed')
+ textured=dense/'textured'
+ if run(['colmap','mesh_texturer','--workspace_path',str(dense),'--input_path',str(mesh),'--output_path',str(textured)],folder,log)!=0: raise RuntimeError('Texture baking failed')
+ textured_mesh=textured/'mesh.ply'; texture=textured/'texture.png'
+ if not textured_mesh.exists() or not texture.exists(): raise RuntimeError('Textured mesh or texture atlas was not produced')
+ import trimesh
+ scene=trimesh.load(textured_mesh,force='scene'); scene.export(folder/'model.glb',file_type='glb'); shutil.copy2(texture,folder/'texture.png')
